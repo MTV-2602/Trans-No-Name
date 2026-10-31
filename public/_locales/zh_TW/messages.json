@@ -1,0 +1,698 @@
+{
+  "MAIN______________________________________": {
+    "message": "主要                                      "
+  },
+  "MAIN": {
+    "message": "主要"
+  },
+  "Mouse_Tooltip_Translator": {
+    "message": "Trans No Name"
+  },
+  "Translate_When": {
+    "message": "何時翻譯"
+  },
+  "Translate_From": {
+    "message": "翻譯自"
+  },
+  "Translate_Into": {
+    "message": "翻譯成"
+  },
+  "Translator_Engine": {
+    "message": "翻譯引擎"
+  },
+  "LLM_Provider": {
+    "message": "LLM Provider"
+  },
+  "LLM_Api_Endpoint": {
+    "message": "LLM API Endpoint URL"
+  },
+  "LLM_Api_Key": {
+    "message": "LLM API Key"
+  },
+  "LLM_Model": {
+    "message": "LLM Model"
+  },
+  "Mouseover_Text_Type": {
+    "message": "滑鼠懸停文本類型"
+  },
+  "Translate_Into_2": {
+    "message": "Secondary Translate Into"
+  },
+  "Writing_Language": {
+    "message": "寫作語言"
+  },
+  "Reverse_Translate_Language": {
+    "message": "逆向翻譯語言"
+  },
+  "OCR_Language": {
+    "message": "OCR 語言"
+  },
+  "Detect_Subtitle": {
+    "message": "檢測字幕"
+  },
+  "KEYBOARD______________________________________": {
+    "message": "鍵盤                                      "
+  },
+  "KEYBOARD": {
+    "message": "鍵盤"
+  },
+  "Show_Tooltip_When": {
+    "message": "何時顯示工具提示"
+  },
+  "Voice_When": {
+    "message": "何時語音"
+  },
+  "Translate_Writing_When": {
+    "message": "何時翻譯書寫"
+  },
+  "Ignore_AltGr_Modifier": {
+    "message": "Ignore AltGr Modifier"
+  },
+  "Auto_Reader_When": {
+    "message": "何時進行自動閱讀"
+  },
+  "Translate_Page_When": {
+    "message": "Translate Page When"
+  },
+  "OCR_When": {
+    "message": "何時進行OCR"
+  },
+  "Mouseover_Text_Type_Swap_Key": {
+    "message": "滑鼠懸停文本類型切換鍵"
+  },
+  "Speech_Recognition_When": {
+    "message": "何時進行語音識別"
+  },
+  "Toggle_Mouseover_Text_Type_When": {
+    "message": "Toggle Mouseover Text Type When"
+  },
+  "Mouseover_Text_Type_Key_Hold": {
+    "message": "Mouseover Text Type Key Hold"
+  },
+  "Secondary_Language_When": {
+    "message": "Secondary Language When"
+  },
+  "Swap_Key_Toggle_Mode": {
+    "message": "Swap Key Toggle Mode"
+  },
+  "Toggle_Extension_When": {
+    "message": "Toggle Extension When"
+  },
+  "TTS_Pause_Resume_When": {
+    "message": "TTS Pause Resume When"
+  },
+  "GRAPHIC______________________________________": {
+    "message": "圖形                                      "
+  },
+  "GRAPHIC": {
+    "message": "圖形"
+  },
+  "Tooltip_Font_Size": {
+    "message": "工具提示字體大小"
+  },
+  "Tooltip_Font_Family": {
+    "message": "Tooltip Font Family"
+  },
+  "Subtitle_Background": {
+    "message": "Subtitle Background"
+  },
+  "Tooltip_Width": {
+    "message": "工具提示寬度"
+  },
+  "Tooltip_Distance": {
+    "message": "工具提示距離"
+  },
+  "Tooltip_Animation": {
+    "message": "工具提示動畫"
+  },
+  "Tooltip_Disappear_Duration": {
+    "message": "Tooltip Disappear Duration"
+  },
+  "Tooltip_Position": {
+    "message": "工具提示位置"
+  },
+  "Tooltip_Placement": {
+    "message": "Tooltip Placement"
+  },
+  "Above": {
+    "message": "Above"
+  },
+  "Below": {
+    "message": "Below"
+  },
+  "Tooltip_Text_Align": {
+    "message": "工具提示文本對齊"
+  },
+  "Tooltip_Background_Blur": {
+    "message": "工具提示背景模糊"
+  },
+  "Mouseover_Highlight_Text": {
+    "message": "滑鼠懸停高亮文本"
+  },
+  "Tooltip_Font_Color": {
+    "message": "工具提示字體顏色"
+  },
+  "Tooltip_Background_Color": {
+    "message": "工具提示背景顏色"
+  },
+  "Tooltip_Border_Color": {
+    "message": "工具提示邊框顏色"
+  },
+  "Mouseover_Text_Highlight_Color": {
+    "message": "滑鼠懸停文本高亮顏色"
+  },
+  "Ebook_Theme": {
+    "message": "Ebook Theme"
+  },
+  "Setting_Compact_mode": {
+    "message": "Setting Compact mode"
+  },
+  "VOICE______________________________________": {
+    "message": "語音                                      "
+  },
+  "VOICE": {
+    "message": "語音"
+  },
+  "Voice_Volume": {
+    "message": "語音音量"
+  },
+  "Voice_Speed": {
+    "message": "語音速度"
+  },
+  "Voice_Target": {
+    "message": "語音目標"
+  },
+  "Voice_Repeat": {
+    "message": "語音重複"
+  },
+  "Voice_for_": {
+    "message": "語音用於 "
+  },
+  "Voice_speed_for_": {
+    "message": "Voice speed for "
+  },
+  "EXCLUDE______________________________________": {
+    "message": "排除                                      "
+  },
+  "EXCLUDE": {
+    "message": "排除"
+  },
+  "Exclude_Language": {
+    "message": "排除語言"
+  },
+  "Website_Filter_Mode": {
+    "message": "Website Filter Mode"
+  },
+  "Exclude_Website": {
+    "message": "排除網站"
+  },
+  "Whitelist_Website": {
+    "message": "網站白名單"
+  },
+  "Website_Target_Language": {
+    "message": "Website Target Language"
+  },
+  "Block_Current_Site": {
+    "message": "Block Current Site"
+  },
+  "Allow_Current_Site": {
+    "message": "Allow Current Site"
+  },
+  "ADVANCED______________________________________": {
+    "message": "進階                                      "
+  },
+  "ADVANCED": {
+    "message": "進階"
+  },
+  "UI_Language": {
+    "message": "UI Language"
+  },
+  "Detect_PDF": {
+    "message": "檢測PDF"
+  },
+  "Mouseover_Text_Type_2": {
+    "message": "Secondary Mouseover Text Type"
+  },
+  "Mouseover_Pause_Subtitle": {
+    "message": "滑鼠懸停暫停字幕"
+  },
+  "Show_Tooltip_While_Typing": {
+    "message": "Show Tooltip While Typing"
+  },
+  "Tooltip_Info_Source_Text": {
+    "message": "工具提示信息來源文本"
+  },
+  "Translate_Exclude_Regex": {
+    "message": "Translate Exclude Regex"
+  },
+  "Tooltip_Info_Source_Language": {
+    "message": "工具提示信息來源語言"
+  },
+  "Tooltip_Info_Transliteration": {
+    "message": "工具提示信息音譯"
+  },
+  "Tooltip_Interval_Time": {
+    "message": "工具提示間隔時間"
+  },
+  "Tooltip_Show_Delay": {
+    "message": "Tooltip Show Delay"
+  },
+  "Tooltip_Word_Dictionary": {
+    "message": "工具提示詞典"
+  },
+  "Tooltip_Word_Dictionary_Source": {
+    "message": "Tooltip Word Dictionary Source"
+  },
+  "Fallback_Translator_Engine": {
+    "message": "備用翻譯引擎"
+  },
+  "SPEECH": {
+    "message": "語音識別"
+  },
+  "Speech_Recognition_Language": {
+    "message": "語音識別語言"
+  },
+  "Voice_Panel_Translate_Language": {
+    "message": "語音面板翻譯語言"
+  },
+  "Voice_Panel_Text_Target": {
+    "message": "語音面板文本目標"
+  },
+  "Voice_Panel_Padding": {
+    "message": "語音面板填充"
+  },
+  "Voice_Panel_Text_Align": {
+    "message": "語音面板文本對齊"
+  },
+  "Voice_Panel_Source_Font_Size": {
+    "message": "語音面板來源字體大小"
+  },
+  "Voice_Panel_Target_Font_Size": {
+    "message": "語音面板目標字體大小"
+  },
+  "Voice_Panel_Source_Font_Color": {
+    "message": "語音面板來源字體顏色"
+  },
+  "Voice_Panel_Target_Font_Color": {
+    "message": "語音面板目標字體顏色"
+  },
+  "Voice_Panel_Source_Border_Color": {
+    "message": "語音面板來源邊框顏色"
+  },
+  "Voice_Panel_Target_Border_Color": {
+    "message": "語音面板目標邊框顏色"
+  },
+  "Voice_Panel_Background_Color": {
+    "message": "語音面板背景顏色"
+  },
+  "BACKUP______________________________________": {
+    "message": "備份                                      "
+  },
+  "BACKUP": {
+    "message": "備份"
+  },
+  "Sync_Setting": {
+    "message": "Sync Setting"
+  },
+  "Import_Setting": {
+    "message": "匯入設定"
+  },
+  "Export_Setting": {
+    "message": "匯出設定"
+  },
+  "Reset_Setting": {
+    "message": "重設設定"
+  },
+  "About______________________________________": {
+    "message": "關於                                      "
+  },
+  "How_to_use": {
+    "message": "如何使用"
+  },
+  "Check_how_to_use_this_extension": {
+    "message": "查看如何使用此擴展"
+  },
+  "PDF_Viewer": {
+    "message": "PDF 閱讀器"
+  },
+  "Translate_local_PDF_file": {
+    "message": "翻譯本地 PDF 文件"
+  },
+  "Ebook_Reader": {
+    "message": "電子書閱讀器"
+  },
+  "Translate_local_ebook_file": {
+    "message": "翻譯本地電子書文件"
+  },
+  "Twitter": {
+    "message": "Twitter"
+  },
+  "Retweet_twitter_post": {
+    "message": "轉發 Twitter 帖子"
+  },
+  "Review_Page": {
+    "message": "評論頁面"
+  },
+  "Comment_on_this_extension": {
+    "message": "評論此擴展"
+  },
+  "Source_code": {
+    "message": "源代碼"
+  },
+  "Check_source_code_in_github": {
+    "message": "在 GitHub 上查看源代碼"
+  },
+  "Privacy_Policy": {
+    "message": "隱私政策"
+  },
+  "User_privacy_policy": {
+    "message": "用戶隱私政策"
+  },
+  "Voice_Panel": {
+    "message": "語音面板"
+  },
+  "Translate_Voice": {
+    "message": "翻譯語音"
+  },
+  "Review______________________________________": {
+    "message": "評論                                      "
+  },
+  "Review_this": {
+    "message": "評論此"
+  },
+  "Coffee______________________________________": {
+    "message": "咖啡                                      "
+  },
+  "Title______________________________________": {
+    "message": "標題                                      "
+  },
+  "SELECT_OPTION______________________________": {
+    "message": "選擇選項                              "
+  },
+  "On": {
+    "message": "開"
+  },
+  "Off": {
+    "message": "關"
+  },
+  "Auto": {
+    "message": "自動"
+  },
+  "None": {
+    "message": "無"
+  },
+  "Select": {
+    "message": "選擇"
+  },
+  "Mouseover": {
+    "message": "滑鼠懸停"
+  },
+  "Mouseover_n_Select": {
+    "message": "懸停並選擇"
+  },
+  "Follow": {
+    "message": "跟隨"
+  },
+  "Fixed": {
+    "message": "固定"
+  },
+  "Top_Right": {
+    "message": "Top Right"
+  },
+  "Fade": {
+    "message": "淡入淡出"
+  },
+  "Scale": {
+    "message": "縮放"
+  },
+  "Shift_away": {
+    "message": "遠移"
+  },
+  "Shift_toward": {
+    "message": "近移"
+  },
+  "Perspective": {
+    "message": "透視"
+  },
+  "Word": {
+    "message": "單字"
+  },
+  "Sentence": {
+    "message": "句子"
+  },
+  "Container": {
+    "message": "容器"
+  },
+  "Both": {
+    "message": "Both"
+  },
+  "Blacklist": {
+    "message": "Blacklist"
+  },
+  "Whitelist": {
+    "message": "Whitelist"
+  },
+  "Source": {
+    "message": "原文"
+  },
+  "Source_Text": {
+    "message": "原文文字"
+  },
+  "Translated_Text": {
+    "message": "翻譯文字"
+  },
+  "Source_n_Translated": {
+    "message": "原文 + 翻譯"
+  },
+  "Translated_n_Source": {
+    "message": "翻譯 + 原文"
+  },
+  "Dual_Subtitle": {
+    "message": "雙語字幕"
+  },
+  "Target_Single_Subtitle": {
+    "message": "譯文字幕"
+  },
+  "Source_Single_Subtitle": {
+    "message": "原文字幕"
+  },
+  "Always": {
+    "message": "總是顯示"
+  },
+  "Center": {
+    "message": "置中"
+  },
+  "Left": {
+    "message": "靠左對齊"
+  },
+  "Right": {
+    "message": "靠右對齊"
+  },
+  "Justify": {
+    "message": "兩端對齊"
+  },
+  "Light": {
+    "message": "Light"
+  },
+  "Dark": {
+    "message": "Dark"
+  },
+  "Default": {
+    "message": "預設"
+  },
+  "Ctrl_Left": {
+    "message": "Ctrl + 左鍵"
+  },
+  "Ctrl_Right": {
+    "message": "Ctrl + 右鍵"
+  },
+  "Alt_Left": {
+    "message": "Alt + 左鍵"
+  },
+  "Alt_Right": {
+    "message": "Alt + 右鍵"
+  },
+  "Shift_Left": {
+    "message": "Shift + 左鍵"
+  },
+  "Shift_Right": {
+    "message": "Shift + 右鍵"
+  },
+  "Meta_Left": {
+    "message": "Win/⌘ + 左鍵"
+  },
+  "Meta_Right": {
+    "message": "Win/⌘ + 右鍵"
+  },
+  "Click_Left": {
+    "message": "左鍵點擊"
+  },
+  "Click_Middle": {
+    "message": "中鍵點擊"
+  },
+  "Click_Right": {
+    "message": "右鍵點擊"
+  },
+  "google": {
+    "message": "Google"
+  },
+  "bing": {
+    "message": "Bing"
+  },
+  "Saved_Words": {
+    "message": "Saved Words"
+  },
+  "Group": {
+    "message": "Group"
+  },
+  "All": {
+    "message": "All"
+  },
+  "Move_to_group": {
+    "message": "Move to group"
+  },
+  "Delete": {
+    "message": "Delete"
+  },
+  "Clear": {
+    "message": "Clear"
+  },
+  "selected": {
+    "message": "selected"
+  },
+  "Date": {
+    "message": "Date"
+  },
+  "Translation": {
+    "message": "Translation"
+  },
+  "No_saved_words_yet": {
+    "message": "No saved words yet"
+  },
+  "Manage_Groups": {
+    "message": "Manage Groups"
+  },
+  "Remove_all": {
+    "message": "Remove all"
+  },
+  "Import_CSV": {
+    "message": "Import CSV"
+  },
+  "Download_CSV": {
+    "message": "Download CSV"
+  },
+  "Save_key": {
+    "message": "Save key"
+  },
+  "Highlight_on_page": {
+    "message": "Highlight on page"
+  },
+  "Right_click_menu": {
+    "message": "Right click menu"
+  },
+  "Add_right_click_context_menu": {
+    "message": "Add right click context menu"
+  },
+  "Done": {
+    "message": "Done"
+  },
+  "On_Select": {
+    "message": "On Select"
+  },
+  "On_Hover": {
+    "message": "On Hover"
+  },
+  "On_Select_n_Hover": {
+    "message": "On Select n Hover"
+  },
+  "Select_group_to_play": {
+    "message": "Select group to play"
+  },
+  "No_Group_Selected": {
+    "message": "No Group Selected"
+  },
+  "Check_groups_to_play": {
+    "message": "Check groups to play"
+  },
+  "Flashcard_makes_cards_from_your_saved_words": {
+    "message": "Flashcard makes cards from your saved words"
+  },
+  "Flashcard": {
+    "message": "Flashcard"
+  },
+  "Play_Flashcard": {
+    "message": "Play Flashcard"
+  },
+  "Reset_progress": {
+    "message": "Reset progress"
+  },
+  "No_History_Data": {
+    "message": "No History Data"
+  },
+  "Today_play_is_completed": {
+    "message": "Today play is completed"
+  },
+  "Try_on_next_day": {
+    "message": "Try on next day"
+  },
+  "No_more_card_to_learn_today": {
+    "message": "No more card to learn today"
+  },
+  "Add_more_history_data_to_play_with": {
+    "message": "Add more history data to play with"
+  },
+  "Finish": {
+    "message": "Finish"
+  },
+  "Today_Flashcards_are_Completed": {
+    "message": "Today Flashcards are Completed"
+  },
+  "No_More_Card_Data": {
+    "message": "No More Card Data"
+  },
+  "Show_Answer": {
+    "message": "Show Answer"
+  },
+  "Again": {
+    "message": "Again"
+  },
+  "Hard": {
+    "message": "Hard"
+  },
+  "Good": {
+    "message": "Good"
+  },
+  "Easy": {
+    "message": "Easy"
+  },
+  "New": {
+    "message": "New"
+  },
+  "Review": {
+    "message": "Review"
+  },
+  "Learning": {
+    "message": "Learning"
+  },
+  "About": {
+    "message": "About"
+  },
+  "Translator": {
+    "message": "Translator"
+  },
+  "Wiktionary": {
+    "message": "Wiktionary"
+  },
+  "Translated": {
+    "message": "Translated"
+  },
+  "Custom": {
+    "message": "Custom"
+  },
+  "appName": {
+    "message": "Trans No Name"
+  },
+  "appDesc": {
+    "message": "滑鼠工具提示翻譯器使用谷歌翻譯對滑鼠懸停文字進行翻譯。支援OCR、TTS、漫畫翻譯和PDF翻譯。"
+  }
+}

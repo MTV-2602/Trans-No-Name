@@ -1,0 +1,989 @@
+import _ from "lodash";
+export var langList = {
+  Abkhaz: "ab",
+  Acehnese: "ace",
+  Acholi: "ach",
+  Afar: "aa",
+  Afrikaans: "af",
+  Albanian: "sq",
+  Alur: "alz",
+  Amharic: "am",
+  Arabic: "ar",
+  Armenian: "hy",
+  Assamese: "as",
+  Avar: "av",
+  Awadhi: "awa",
+  Aymara: "ay",
+  Azerbaijani: "az",
+  Balinese: "ban",
+  Baluchi: "bal",
+  Bambara: "bm",
+  "Baoulé": "bci",
+  Bashkir: "ba",
+  Basque: "eu",
+  "Batak Karo": "btx",
+  "Batak Simalungun": "bts",
+  "Batak Toba": "bbc",
+  Belarusian: "be",
+  Bemba: "bem",
+  Bengali: "bn",
+  Betawi: "bew",
+  Bhojpuri: "bho",
+  Bikol: "bik",
+  Bodo: "brx",
+  Bosnian: "bs",
+  Breton: "br",
+  Bulgarian: "bg",
+  Buryat: "bua",
+  Cantonese: "yue",
+  Catalan: "ca",
+  Cebuano: "ceb",
+  Chamorro: "ch",
+  Chechen: "ce",
+  Chhattisgarhi: "hne",
+  "Chichewa (Nyanja)": "ny",
+  "Chinese (Literary)": "lzh",
+  "Chinese (Simplified)": "zh-CN",
+  "Chinese (Traditional)": "zh-TW",
+  Chuukese: "chk",
+  Chuvash: "cv",
+  Corsican: "co",
+  "Crimean Tatar": "crh",
+  "Crimean Tatar (Latin)": "crh-Latn",
+  Croatian: "hr",
+  Czech: "cs",
+  Danish: "da",
+  Dari: "fa-AF",
+  Dinka: "din",
+  Divehi: "dv",
+  Dogri: "doi",
+  Dombe: "dov",
+  Dutch: "nl",
+  Dyula: "dyu",
+  Dzongkha: "dz",
+  English: "en",
+  Esperanto: "eo",
+  Estonian: "et",
+  Ewe: "ee",
+  Faroese: "fo",
+  Fijian: "fj",
+  "Filipino (Tagalog)": "fil",
+  Finnish: "fi",
+  Fon: "fon",
+  French: "fr",
+  "French (French)": "fr-FR",
+  "French (Canadian)": "fr-CA",
+  Frisian: "fy",
+  Friulian: "fur",
+  Fulfulde: "ff",
+  Ga: "gaa",
+  Galician: "gl",
+  "Ganda (Luganda)": "lg",
+  Georgian: "ka",
+  German: "de",
+  Greek: "el",
+  Guarani: "gn",
+  Gujarati: "gu",
+  "Haitian Creole": "ht",
+  "Hakha Chin": "cnh",
+  Hausa: "ha",
+  Hawaiian: "haw",
+  Hebrew: "iw",
+  Hiligaynon: "hil",
+  Hindi: "hi",
+  Hmong: "hmn",
+  Hungarian: "hu",
+  Hunsrik: "hrx",
+  Iban: "iba",
+  Icelandic: "is",
+  Igbo: "ig",
+  Iloko: "ilo",
+  Indonesian: "id",
+  Inuinnaqtun: "ikt",
+  "Inuktut (Latin)": "iu-Latn",
+  "Inuktut (Syllabics)": "iu",
+  Irish: "ga",
+  Italian: "it",
+  "Jamaican Patois": "jam",
+  Japanese: "ja",
+  Javanese: "jw",
+  Jingpo: "kac",
+  Kalaallisut: "kl",
+  Kannada: "kn",
+  Kanuri: "kr",
+  Kapampangan: "pam",
+  Kashmiri: "ks",
+  Kazakh: "kk",
+  Khasi: "kha",
+  Khmer: "km",
+  Kiga: "cgg",
+  Kikongo: "kg",
+  Kinyarwanda: "rw",
+  Kituba: "ktu",
+  Kokborok: "trp",
+  Komi: "kv",
+  Konkani: "gom",
+  Korean: "ko",
+  Krio: "kri",
+  "Kurdish (Kurmanji)": "ku",
+  "Kurdish (Sorani)": "ckb",
+  Kyrgyz: "ky",
+  Lao: "lo",
+  Latgalian: "ltg",
+  Latin: "la",
+  Latvian: "lv",
+  Ligurian: "lij",
+  Limburgan: "li",
+  Lingala: "ln",
+  Lithuanian: "lt",
+  Lombard: "lmo",
+  "Lower Sorbian": "dsb",
+  Luo: "luo",
+  Luxembourgish: "lb",
+  Macedonian: "mk",
+  Madurese: "mad",
+  Maithili: "mai",
+  Makassar: "mak",
+  Malagasy: "mg",
+  Malay: "ms",
+  "Malay (Jawi)": "ms-Arab",
+  Malayalam: "ml",
+  Maltese: "mt",
+  Mam: "mam",
+  Manx: "gv",
+  Maori: "mi",
+  Marathi: "mr",
+  Marshallese: "mh",
+  Marwadi: "mwr",
+  "Mauritian Creole": "mfe",
+  "Meadow Mari": "chm",
+  "Meiteilon (Manipuri)": "mni-Mtei",
+  Minang: "min",
+  Mizo: "lus",
+  Mongolian: "mn",
+  "Mongolian (Traditional)": "mn-Mong",
+  "Myanmar (Burmese)": "my",
+  "Nahuatl (Eastern Huasteca)": "nhe",
+  Ndau: "ndc-ZW",
+  "Ndebele (South)": "nr",
+  "Nepalbhasa (Newari)": "new",
+  Nepali: "ne",
+  NKo: "bm-Nkoo",
+  "Northern Sotho (Sepedi)": "nso",
+  Norwegian: "no",
+  Nuer: "nus",
+  Occitan: "oc",
+  "Odia (Oriya)": "or",
+  Oromo: "om",
+  Ossetian: "os",
+  Pangasinan: "pag",
+  Papiamento: "pap",
+  Pashto: "ps",
+  Persian: "fa",
+  Polish: "pl",
+  Portuguese: "pt",
+  "Portuguese (Portugal)": "pt-PT",
+  "Portuguese (Brazil)": "pt-BR",
+  Punjabi: "pa",
+  "Punjabi (Shahmukhi)": "pa-Arab",
+  Quechua: "qu",
+  "Querétaro Otomi": "otq",
+  "Qʼeqchiʼ": "kek",
+  Romani: "rom",
+  Romanian: "ro",
+  Rundi: "rn",
+  Russian: "ru",
+  "Sami (North)": "se",
+  Samoan: "sm",
+  Sango: "sg",
+  Sanskrit: "sa",
+  "Santali (Latin)": "sat-Latn",
+  "Santali (Ol Chiki)": "sat",
+  "Scots Gaelic": "gd",
+  Serbian: "sr",
+  "Serbian (Latin)": "sr-Latn",
+  Sesotho: "st",
+  "Seychellois Creole": "crs",
+  Shan: "shn",
+  Shona: "sn",
+  Sicilian: "scn",
+  Silesian: "szl",
+  Sindhi: "sd",
+  "Sinhala (Sinhalese)": "si",
+  Slovak: "sk",
+  Slovenian: "sl",
+  Somali: "so",
+  Spanish: "es",
+  Sundanese: "su",
+  Susu: "sus",
+  Swahili: "sw",
+  Swati: "ss",
+  Swedish: "sv",
+  Tahitian: "ty",
+  Tajik: "tg",
+  Tamazight: "ber-Latn",
+  "Tamazight (Tifinagh)": "ber",
+  Tamil: "ta",
+  Tatar: "tt",
+  Telugu: "te",
+  Tetum: "tet",
+  Thai: "th",
+  Tibetan: "bo",
+  Tigrinya: "ti",
+  Tiv: "tiv",
+  "Tok Pisin": "tpi",
+  Tongan: "to",
+  Tshiluba: "lua",
+  Tsonga: "ts",
+  Tswana: "tn",
+  Tulu: "tcy",
+  Tumbuka: "tum",
+  Turkish: "tr",
+  Turkmen: "tk",
+  Tuvan: "tyv",
+  "Twi (Akan)": "ak",
+  Udmurt: "udm",
+  Ukrainian: "uk",
+  "Upper Sorbian": "hsb",
+  Urdu: "ur",
+  Uyghur: "ug",
+  Uzbek: "uz",
+  Venda: "ve",
+  Venetian: "vec",
+  Vietnamese: "vi",
+  Waray: "war",
+  Welsh: "cy",
+  Wolof: "wo",
+  Xhosa: "xh",
+  Yakut: "sah",
+  Yiddish: "yi",
+  Yoruba: "yo",
+  "Yucatec Maya": "yua",
+  Zapotec: "zap",
+  Zulu: "zu",
+};
+
+export var langListOpposite = _.invert(langList);
+
+// Language detectors and translation providers do not agree on regional
+// variants: one may return `pt` while the selected target is `pt-BR` (or
+// `pt-PT`). Treat those codes as the same language when deciding whether a
+// translation is necessary. Keep the full code for actual provider requests.
+
+// The same language under two names. langList holds google's legacy codes
+// (iw/jw) and fil, while detectors hand back the ISO/BCP-47 ones (he/jv) or
+// google's own `tl` for Filipino - so a Filipino page with a `fil` target used
+// to get a tooltip repeating the sentence.
+const LANG_ALIAS = {
+  he: "iw", // Hebrew
+  jv: "jw", // Javanese
+  in: "id", // Indonesian
+  tl: "fil", // Filipino / Tagalog
+  nb: "no", // Norwegian Bokmal
+};
+
+export function isSameLanguage(langA, langB) {
+  if (!langA || !langB || langA === "auto" || langB === "auto") {
+    return false;
+  }
+
+  const normalize = (lang) => String(lang).trim().replaceAll("_", "-").toLowerCase();
+  const a = normalize(langA);
+  const b = normalize(langB);
+  if (a === b) return true;
+
+  const parse = (tag) => {
+    const parts = tag.split("-");
+    const language = LANG_ALIAS[parts[0]] ?? parts[0];
+    const script = parts.find((p) => p.length === 4); // e.g. Hans/Hant/Arab/Latn
+    return { language, script, hasVariant: parts.length > 1 };
+  };
+
+  const pa = parse(a);
+  const pb = parse(b);
+  if (pa.language !== pb.language) return false;
+
+  // Chinese regional tags (zh-CN/zh-TW/zh-HK) are meaningful for script; don't collapse them.
+  if (pa.language === "zh") return false;
+
+  // If either tag specifies a script, only treat as same when both scripts match.
+  if (pa.script || pb.script) {
+    return Boolean(pa.script) && pa.script === pb.script;
+  }
+
+  // Collapse base-vs-region only (e.g. pt vs pt-BR), but keep different variants distinct.
+  if (pa.hasVariant && pb.hasVariant) return false;
+  return true;
+}
+
+// Same language by code is not enough to call a translation pointless. Google
+// reports a bare `pt` for Brazilian wording, yet still rewrites it into
+// European Portuguese when the target is pt-PT ("se torna parte" -> "passa a
+// fazer parte") — dropping that is the very conversion #257 asked for. So for
+// regional-variant pairs, only skip when the engine handed back the same text;
+// an exact code match keeps the old unconditional skip.
+export function isRedundantTranslation(
+  sourceText,
+  targetText,
+  sourceLang,
+  targetLang
+) {
+  if (sourceLang == targetLang) {
+    return true;
+  }
+  if (!isSameLanguage(sourceLang, targetLang)) {
+    return false;
+  }
+  const normalizeText = (text) => String(text ?? "").replace(/\s+/g, " ").trim();
+  return normalizeText(sourceText) == normalizeText(targetText);
+}
+
+// The exclude list holds full codes (pt-BR), while detectors report the base
+// code (pt), so a plain includes() never matches for regional variants.
+export function isLangExcluded(langExcludeList, lang) {
+  return Boolean(
+    langExcludeList?.some(
+      (excluded) => excluded == lang || isSameLanguage(excluded, lang)
+    )
+  );
+}
+
+export var rtlLangList = [
+  "ar", ///Arabic
+  "az", ///Azerbaijani
+  "bm", ///Bambara
+  "dv", ///Dhivehi
+  "doi", ///Dogri
+  "ha", ///Hausa
+  "iw", ///Hebrew
+  "kk", ///Kazakh
+  "ku", ///Kurdish
+  "ckb", ///Kurdish Sorani
+  "ky", ///Kyrgyz
+  "ml", ///Malayalam
+  "ms-Arab", ///Malay (Jawi)
+  "pa-Arab", ///Punjabi (Shahmukhi)
+  "ps", ///Pashto
+  "fa", ///Persian
+  "sd", ///Sindhi
+  "so", ///Somali
+  "su", ///Sundanese
+  "tg", ///Tajik
+  "tk", ///Turkmen
+  "ur", ///Urdu
+  "ug", ///Uyghur
+  "uz", ///Uzbek
+  "yi", ///Yiddish
+  "yo", ///Yoruba
+]; //right to left language system list
+
+export var bingTtsVoiceList = {
+  af: ["af-ZA-AdriNeural", "af-ZA-WillemNeural"],
+  sq: ["sq-AL-AnilaNeural", "sq-AL-IlirNeural"],
+  am: ["am-ET-AmehaNeural", "am-ET-MekdesNeural"],
+  ar: [
+    "ar-DZ-AminaNeural",
+    "ar-DZ-IsmaelNeural",
+    "ar-BH-AliNeural",
+    "ar-BH-LailaNeural",
+    "ar-EG-SalmaNeural",
+    "ar-EG-ShakirNeural",
+    "ar-IQ-BasselNeural",
+    "ar-IQ-RanaNeural",
+    "ar-JO-SanaNeural",
+    "ar-JO-TaimNeural",
+    "ar-KW-FahedNeural",
+    "ar-KW-NouraNeural",
+    "ar-LB-LaylaNeural",
+    "ar-LB-RamiNeural",
+    "ar-LY-ImanNeural",
+    "ar-LY-OmarNeural",
+    "ar-MA-JamalNeural",
+    "ar-MA-MounaNeural",
+    "ar-OM-AbdullahNeural",
+    "ar-OM-AyshaNeural",
+    "ar-QA-AmalNeural",
+    "ar-QA-MoazNeural",
+    "ar-SA-HamedNeural",
+    "ar-SA-ZariyahNeural",
+    "ar-SY-AmanyNeural",
+    "ar-SY-LaithNeural",
+    "ar-TN-HediNeural",
+    "ar-TN-ReemNeural",
+    "ar-AE-FatimaNeural",
+    "ar-AE-HamdanNeural",
+    "ar-YE-MaryamNeural",
+    "ar-YE-SalehNeural",
+  ],
+  az: ["az-AZ-BabekNeural", "az-AZ-BanuNeural"],
+  bn: [
+    "bn-BD-NabanitaNeural",
+    "bn-BD-PradeepNeural",
+    "bn-IN-BashkarNeural",
+    "bn-IN-TanishaaNeural",
+  ],
+  bs: ["bs-BA-GoranNeural", "bs-BA-VesnaNeural"],
+  bg: ["bg-BG-BorislavNeural", "bg-BG-KalinaNeural"],
+  my: ["my-MM-NilarNeural", "my-MM-ThihaNeural"],
+  ca: ["ca-ES-EnricNeural", "ca-ES-JoanaNeural"],
+  "zh-HK": [
+    "zh-HK-HiuGaaiNeural",
+    "zh-HK-HiuMaanNeural",
+    "zh-HK-WanLungNeural",
+  ],
+  "zh-CN": [
+    "zh-CN-XiaoxiaoNeural",
+    "zh-CN-XiaoyiNeural",
+    "zh-CN-YunjianNeural",
+    "zh-CN-YunxiNeural",
+    "zh-CN-YunxiaNeural",
+    "zh-CN-YunyangNeural",
+  ],
+  "zh-CN-liaoning": ["zh-CN-liaoning-XiaobeiNeural"],
+  "zh-TW": [
+    "zh-TW-HsiaoChenNeural",
+    "zh-TW-YunJheNeural",
+    "zh-TW-HsiaoYuNeural",
+  ],
+  "zh-CN-shaanxi": ["zh-CN-shaanxi-XiaoniNeural"],
+  hr: ["hr-HR-GabrijelaNeural", "hr-HR-SreckoNeural"],
+  cs: ["cs-CZ-AntoninNeural", "cs-CZ-VlastaNeural"],
+  da: ["da-DK-ChristelNeural", "da-DK-JeppeNeural"],
+  nl: [
+    "nl-BE-ArnaudNeural",
+    "nl-BE-DenaNeural",
+    "nl-NL-ColetteNeural",
+    "nl-NL-FennaNeural",
+    "nl-NL-MaartenNeural",
+  ],
+  en: [
+    "en-AU-NatashaNeural",
+    "en-AU-WilliamNeural",
+    "en-CA-ClaraNeural",
+    "en-CA-LiamNeural",
+    "en-HK-SamNeural",
+    "en-HK-YanNeural",
+    "en-IN-NeerjaNeural",
+    "en-IN-NeerjaNeural",
+    "en-IN-PrabhatNeural",
+    "en-IE-ConnorNeural",
+    "en-IE-EmilyNeural",
+    "en-KE-AsiliaNeural",
+    "en-KE-ChilembaNeural",
+    "en-NZ-MitchellNeural",
+    "en-NZ-MollyNeural",
+    "en-NG-AbeoNeural",
+    "en-NG-EzinneNeural",
+    "en-PH-JamesNeural",
+    "en-PH-RosaNeural",
+    "en-SG-LunaNeural",
+    "en-SG-WayneNeural",
+    "en-ZA-LeahNeural",
+    "en-ZA-LukeNeural",
+    "en-TZ-ElimuNeural",
+    "en-TZ-ImaniNeural",
+    "en-GB-LibbyNeural",
+    "en-GB-MaisieNeural",
+    "en-GB-RyanNeural",
+    "en-GB-SoniaNeural",
+    "en-GB-ThomasNeural",
+    "en-US-AriaNeural",
+    "en-US-AnaNeural",
+    "en-US-ChristopherNeural",
+    "en-US-EricNeural",
+    "en-US-GuyNeural",
+    "en-US-JennyNeural",
+    "en-US-MichelleNeural",
+    "en-US-RogerNeural",
+    "en-US-SteffanNeural",
+  ],
+  et: ["et-EE-AnuNeural", "et-EE-KertNeural"],
+  tl: ["fil-PH-AngeloNeural", "fil-PH-BlessicaNeural"],
+  fi: ["fi-FI-HarriNeural", "fi-FI-NooraNeural"],
+  fr: [
+    "fr-BE-CharlineNeural",
+    "fr-BE-GerardNeural",
+    "fr-CA-AntoineNeural",
+    "fr-CA-JeanNeural",
+    "fr-CA-SylvieNeural",
+    "fr-FR-DeniseNeural",
+    "fr-FR-EloiseNeural",
+    "fr-FR-HenriNeural",
+    "fr-CH-ArianeNeural",
+    "fr-CH-FabriceNeural",
+  ],
+  gl: ["gl-ES-RoiNeural", "gl-ES-SabelaNeural"],
+  ka: ["ka-GE-EkaNeural", "ka-GE-GiorgiNeural"],
+  de: [
+    "de-AT-IngridNeural",
+    "de-AT-JonasNeural",
+    "de-DE-AmalaNeural",
+    "de-DE-ConradNeural",
+    "de-DE-KatjaNeural",
+    "de-DE-KillianNeural",
+    "de-CH-JanNeural",
+    "de-CH-LeniNeural",
+  ],
+  el: ["el-GR-AthinaNeural", "el-GR-NestorasNeural"],
+  gu: ["gu-IN-DhwaniNeural", "gu-IN-NiranjanNeural"],
+  iw: ["he-IL-AvriNeural", "he-IL-HilaNeural"],
+  hi: ["hi-IN-MadhurNeural", "hi-IN-SwaraNeural"],
+  hu: ["hu-HU-NoemiNeural", "hu-HU-TamasNeural"],
+  is: ["is-IS-GudrunNeural", "is-IS-GunnarNeural"],
+  id: ["id-ID-ArdiNeural", "id-ID-GadisNeural"],
+  ga: ["ga-IE-ColmNeural", "ga-IE-OrlaNeural"],
+  it: ["it-IT-DiegoNeural", "it-IT-ElsaNeural", "it-IT-IsabellaNeural"],
+  ja: ["ja-JP-KeitaNeural", "ja-JP-NanamiNeural"],
+  jv: ["jv-ID-DimasNeural", "jv-ID-SitiNeural"],
+  kn: ["kn-IN-GaganNeural", "kn-IN-SapnaNeural"],
+  kk: ["kk-KZ-AigulNeural", "kk-KZ-DauletNeural"],
+  km: ["km-KH-PisethNeural", "km-KH-SreymomNeural"],
+  ko: ["ko-KR-InJoonNeural", "ko-KR-SunHiNeural"],
+  lo: ["lo-LA-ChanthavongNeural", "lo-LA-KeomanyNeural"],
+  lv: ["lv-LV-EveritaNeural", "lv-LV-NilsNeural"],
+  lt: ["lt-LT-LeonasNeural", "lt-LT-OnaNeural"],
+  mk: ["mk-MK-AleksandarNeural", "mk-MK-MarijaNeural"],
+  ms: ["ms-MY-OsmanNeural", "ms-MY-YasminNeural"],
+  ml: ["ml-IN-MidhunNeural", "ml-IN-SobhanaNeural"],
+  mt: ["mt-MT-GraceNeural", "mt-MT-JosephNeural"],
+  mr: ["mr-IN-AarohiNeural", "mr-IN-ManoharNeural"],
+  mn: ["mn-MN-BataaNeural", "mn-MN-YesuiNeural"],
+  ne: ["ne-NP-HemkalaNeural", "ne-NP-SagarNeural"],
+  nb: ["nb-NO-FinnNeural", "nb-NO-PernilleNeural"],
+  ps: ["ps-AF-GulNawazNeural", "ps-AF-LatifaNeural"],
+  fa: ["fa-IR-DilaraNeural", "fa-IR-FaridNeural"],
+  pl: ["pl-PL-MarekNeural", "pl-PL-ZofiaNeural"],
+  pt: [
+    "pt-BR-AntonioNeural",
+    "pt-BR-FranciscaNeural",
+    "pt-PT-DuarteNeural",
+    "pt-PT-RaquelNeural",
+  ],
+  ro: ["ro-RO-AlinaNeural", "ro-RO-EmilNeural"],
+  ru: ["ru-RU-DmitryNeural", "ru-RU-SvetlanaNeural"],
+  sr: ["sr-RS-NicholasNeural", "sr-RS-SophieNeural"],
+  si: ["si-LK-SameeraNeural", "si-LK-ThiliniNeural"],
+  sk: ["sk-SK-LukasNeural", "sk-SK-ViktoriaNeural"],
+  sl: ["sl-SI-PetraNeural", "sl-SI-RokNeural"],
+  so: ["so-SO-MuuseNeural", "so-SO-UbaxNeural"],
+  es: [
+    "es-AR-ElenaNeural",
+    "es-AR-TomasNeural",
+    "es-BO-MarceloNeural",
+    "es-BO-SofiaNeural",
+    "es-CL-CatalinaNeural",
+    "es-CL-LorenzoNeural",
+    "es-CO-GonzaloNeural",
+    "es-CO-SalomeNeural",
+    "es-CR-JuanNeural",
+    "es-CR-MariaNeural",
+    "es-CU-BelkysNeural",
+    "es-CU-ManuelNeural",
+    "es-DO-EmilioNeural",
+    "es-DO-RamonaNeural",
+    "es-EC-AndreaNeural",
+    "es-EC-LuisNeural",
+    "es-SV-LorenaNeural",
+    "es-SV-RodrigoNeural",
+    "es-GQ-JavierNeural",
+    "es-GQ-TeresaNeural",
+    "es-GT-AndresNeural",
+    "es-GT-MartaNeural",
+    "es-HN-CarlosNeural",
+    "es-HN-KarlaNeural",
+    "es-MX-DaliaNeural",
+    "es-MX-JorgeNeural",
+    "es-NI-FedericoNeural",
+    "es-NI-YolandaNeural",
+    "es-PA-MargaritaNeural",
+    "es-PA-RobertoNeural",
+    "es-PY-MarioNeural",
+    "es-PY-TaniaNeural",
+    "es-PE-AlexNeural",
+    "es-PE-CamilaNeural",
+    "es-PR-KarinaNeural",
+    "es-PR-VictorNeural",
+    "es-ES-AlvaroNeural",
+    "es-ES-ElviraNeural",
+    "es-US-AlonsoNeural",
+    "es-US-PalomaNeural",
+    "es-UY-MateoNeural",
+    "es-UY-ValentinaNeural",
+    "es-VE-PaolaNeural",
+    "es-VE-SebastianNeural",
+  ],
+  su: ["su-ID-JajangNeural", "su-ID-TutiNeural"],
+  sw: [
+    "sw-KE-RafikiNeural",
+    "sw-KE-ZuriNeural",
+    "sw-TZ-DaudiNeural",
+    "sw-TZ-RehemaNeural",
+  ],
+  sv: ["sv-SE-MattiasNeural", "sv-SE-SofieNeural"],
+  ta: [
+    "ta-IN-PallaviNeural",
+    "ta-IN-ValluvarNeural",
+    "ta-MY-KaniNeural",
+    "ta-MY-SuryaNeural",
+    "ta-SG-AnbuNeural",
+    "ta-SG-VenbaNeural",
+    "ta-LK-KumarNeural",
+    "ta-LK-SaranyaNeural",
+  ],
+  te: ["te-IN-MohanNeural", "te-IN-ShrutiNeural"],
+  th: ["th-TH-NiwatNeural", "th-TH-PremwadeeNeural"],
+  tr: ["tr-TR-AhmetNeural", "tr-TR-EmelNeural"],
+  uk: ["uk-UA-OstapNeural", "uk-UA-PolinaNeural"],
+  ur: [
+    "ur-IN-GulNeural",
+    "ur-IN-SalmanNeural",
+    "ur-PK-AsadNeural",
+    "ur-PK-UzmaNeural",
+  ],
+  uz: ["uz-UZ-MadinaNeural", "uz-UZ-SardorNeural"],
+  vi: ["vi-VN-HoaiMyNeural", "vi-VN-NamMinhNeural"],
+  cy: ["cy-GB-AledNeural", "cy-GB-NiaNeural"],
+  zu: ["zu-ZA-ThandoNeural", "zu-ZA-ThembaNeural"],
+};
+
+export var googleTranslateTtsLangList = [
+  "af",
+  "sq",
+  "ar",
+  "bn",
+  "bs",
+  "bg",
+  "ca",
+  "zh-CN",
+  "zh-TW",
+  "hr",
+  "cs",
+  "da",
+  "nl",
+  "en",
+  "et",
+  "tl",
+  "fi",
+  "fr",
+  "de",
+  "el",
+  "gu",
+  "iw",
+  "hi",
+  "hu",
+  "is",
+  "id",
+  "it",
+  "ja",
+  "jw",
+  "kn",
+  "km",
+  "ko",
+  "la",
+  "lv",
+  "ms",
+  "ml",
+  "mr",
+  "my",
+  "ne",
+  "no",
+  "pl",
+  "pt",
+  "ro",
+  "ru",
+  "sr",
+  "si",
+  "sk",
+  "es",
+  "su",
+  "sw",
+  "sv",
+  "ta",
+  "te",
+  "th",
+  "tr",
+  "uk",
+  "ur",
+  "vi",
+];
+
+export var ocrLangList = {
+  Afrikaans: "afr",
+  Albanian: "sqi",
+  Amharic: "amh",
+  Arabic: "ara",
+  Armenian: "hye",
+  Azerbaijani: "aze",
+  Basque: "eus",
+  Belarusian: "bel",
+  Bengali: "ben",
+  Bosnian: "bos",
+  Bulgarian: "bul",
+  Burmese: "mya",
+  Catalan: "cat",
+  Cebuano: "ceb",
+  "Chinese Simplified": "chi_sim",
+  "Chinese Simplified (vertical)": "chi_sim_vert",
+  "Chinese Traditional": "chi_tra",
+  "Chinese Traditional (vertical)": "chi_tra_vert",
+  Corsican: "cos",
+  Croatian: "hrv",
+  Czech: "ces",
+  Danish: "dan",
+  Dutch: "nld",
+  English: "eng",
+  Esperanto: "epo",
+  Estonian: "est",
+  Filipino: "fil",
+  Finnish: "fin",
+  French: "fra",
+  Frisian: "fry",
+  Galician: "glg",
+  Georgian: "kat",
+  German: "deu",
+  Greek: "ell",
+  Gujarati: "guj",
+  Haitian: "hat",
+  Hebrew: "heb",
+  Hindi: "hin",
+  Hungarian: "hun",
+  Icelandic: "isl",
+  Indonesian: "ind",
+  Irish: "gle",
+  Italian: "ita",
+  Japanese: "jpn",
+  "Japanese (vertical)": "jpn_vert",
+  Javanese: "jav",
+  Kannada: "kan",
+  Kazakh: "kaz",
+  Khmer: "khm",
+  Korean: "kor",
+  "Korean (vertical)": "kor_vert",
+  Kurdish: "kmr",
+  Lao: "lao",
+  Latin: "lat",
+  Latvian: "lav",
+  Lithuanian: "lit",
+  Luxembourgish: "ltz",
+  Macedonian: "mkd",
+  Malay: "msa",
+  Malayalam: "mal",
+  Maltese: "mlt",
+  Maori: "mri",
+  Marathi: "mar",
+  Mongolian: "mon",
+  Nepali: "nep",
+  Norwegian: "nor",
+  Persian: "fas",
+  Polish: "pol",
+  Portuguese: "por",
+  Romanian: "ron",
+  Russian: "rus",
+  "Scottish Gaelic": "gla",
+  Serbian: "srp",
+  Sindhi: "snd",
+  Sinhala: "sin",
+  Slovak: "slk",
+  Slovenian: "slv",
+  Spanish: "spa",
+  Sundanese: "sun",
+  Swahili: "swa",
+  Swedish: "swe",
+  Tajik: "tgk",
+  Tamil: "tam",
+  Telugu: "tel",
+  Thai: "tha",
+  Turkish: "tur",
+  Ukrainian: "ukr",
+  Urdu: "urd",
+  Uzbek: "uzb",
+  Vietnamese: "vie",
+  Welsh: "cym",
+  Yiddish: "yid",
+  Yoruba: "yor",
+};
+
+export var listenLangList = {
+  Afrikaans: "af-ZA",
+  Amharic: "am-ET",
+  "Arabic_Uni Arab Emirates": "ar-AE",
+  Arabic_Bahrain: "ar-BH",
+  Arabic_Algeria: "ar-DZ",
+  Arabic_Egypt: "ar-EG",
+  Arabic_Iraq: "ar-IQ",
+  Arabic_Jordan: "ar-JO",
+  Arabic_Kuwait: "ar-KW",
+  Arabic_Lebanon: "ar-LB",
+  Arabic_Libya: "ar-LY",
+  Arabic_Maroco: "ar-MA",
+  Arabic_Oman: "ar-OM",
+  Arabic_Qatar: "ar-QA",
+  "Arabic_Saudi Arabia": "ar-SA",
+  Arabic_Syria: "ar-SY",
+  Arabic_Tunisia: "ar-TN",
+  Arabic_Yemen: "ar-YE",
+  Armenian: "hy-AM",
+  Azerbaijani: "az-AZ",
+  Bangla_Bangladesh: "bn-BD",
+  Bangla_India: "bn-IN",
+  Basque: "eu-ES",
+  Bulgarian: "bg-BG",
+  Catalan: "ca-ES",
+  "Chinese_Chinese Mandarin (Mainland China)": "cmn-Hans-CN",
+  "Chinese_Chinese Mandarin (Hongkong)": "cmn-Hans-HK",
+  "Chinese_Chinese (Taiwan)": "cmn-Hant-TW",
+  "Chinese_Chinese Cantonese (Hongkong)": "yue-Hant-HK",
+  Croatian: "hr-HR",
+  Czech: "cs-CZ",
+  Dansk: "da-DK",
+  Deutsch: "de-DE",
+  Dutch: "nl-NL",
+  English_Australia: "en-AU",
+  English_Canada: "en-CA",
+  English_India: "en-IN",
+  English_Kenya: "en-KE",
+  English_Tanzania: "en-TZ",
+  English_Ghana: "en-GH",
+  "English_New Zealand": "en-NZ",
+  English_Nigeria: "en-NG",
+  "English_South Africa": "en-ZA",
+  English_Philippines: "en-PH",
+  "English_United Kingdom": "en-GB",
+  "English_United States": "en-US",
+  Filipino: "fil-PH",
+  Finland: "fi-FI",
+  French: "fr-FR",
+  Galician: "gl-ES",
+  Georgian: "ka-GE",
+  Greek: "el-GR",
+  Gujarati: "gu-IN",
+  Hindi: "hi-IN",
+  Hungarian: "hu-HU",
+  Icelandic: "is-IS",
+  Indonesian: "id-ID",
+  Italian_Italia: "it-IT",
+  Italian_Svizzera: "it-CH",
+  Japanese: "ja-JP",
+  Javanese: "jv-ID",
+  Kannada: "kn-IN",
+  Khmer: "km-KH",
+  Kiswahili_Tanzania: "sw-TZ",
+  Kiswahili_Kenya: "sw-KE",
+  Korean: "ko-KR",
+  Lao: "lo-LA",
+  Latvian: "lv-LV",
+  Lithuanian: "lt-LT",
+  Malay: "ms-MY",
+  Malayalam: "ml-IN",
+  Marathi: "mr-IN",
+  Myanmar: "my-MM",
+  Nepali: "ne-NP",
+  "Norwegian Bokmål": "nb-NO",
+  Polish: "pl-PL",
+  Portuguese_Brasil: "pt-BR",
+  Portuguese_Portugal: "pt-PT",
+  Romania: "ro-RO",
+  Russian: "ru-RU",
+  Serbian: "sr-RS",
+  Sinhala: "si-LK",
+  Slovene: "sl-SI",
+  Slovak: "sk-SK",
+  Spanish_Argentina: "es-AR",
+  Spanish_Bolivia: "es-BO",
+  Spanish_Chile: "es-CL",
+  Spanish_Colombia: "es-CO",
+  "Spanish_Costa Rica": "es-CR",
+  Spanish_Ecuador: "es-EC",
+  "Spanish_El Salvador": "es-SV",
+  Spanish_España: "es-ES",
+  "Spanish_Estados Unidos": "es-US",
+  Spanish_Guatemala: "es-GT",
+  Spanish_Honduras: "es-HN",
+  Spanish_México: "es-MX",
+  Spanish_Nicaragua: "es-NI",
+  Spanish_Panamá: "es-PA",
+  Spanish_Paraguay: "es-PY",
+  Spanish_Perú: "es-PE",
+  "Spanish_Puerto Rico": "es-PR",
+  "Spanish_República Dominicana": "es-DO",
+  Spanish_Uruguay: "es-UY",
+  Spanish_Venezuela: "es-VE",
+  Sundanese: "su-ID",
+  Swedish: "sv-SE",
+  Tamil_India: "ta-IN",
+  Tamil_Singapore: "ta-SG",
+  "Tamil_Sri Lanka": "ta-LK",
+  Tamil_Malaysia: "ta-MY",
+  Telugu: "te-IN",
+  Thai: "th-TH",
+  Turkish: "tr-TR",
+  Urdu_Pakistan: "ur-PK",
+  Urdu_India: "ur-IN",
+  Vietnamese: "vi-VN",
+  Ukrainian: "uk-UA",
+  Zulu: "zu-ZA",
+};
+
+
+
+// Localized language names for the language dropdowns and tooltip info.
+// Uses Intl.DisplayNames (CLDR data built into the browser) with the extension
+// UI language; falls back to the curated English name when the tag is invalid
+// or CLDR has no data (rare google-only codes like "alz").
+// English UI keeps the curated names as-is.
+var displayNamesCache = {};
+function getDisplayNames(uiLang) {
+  if (!(uiLang in displayNamesCache)) {
+    try {
+      displayNamesCache[uiLang] = new Intl.DisplayNames([uiLang], {
+        type: "language",
+        fallback: "none",
+      });
+    } catch (e) {
+      displayNamesCache[uiLang] = null;
+    }
+  }
+  return displayNamesCache[uiLang];
+}
+
+// tesseract script-variant codes that CLDR cannot resolve directly
+var tesseractCodeMap = {
+  chi_sim: "zh-Hans",
+  chi_tra: "zh-Hant",
+};
+
+export function getLocalizedLangName(code, englishName, uiLang) {
+  if (!code || !uiLang || uiLang.startsWith("en")) return englishName;
+  const displayNames = getDisplayNames(uiLang);
+  if (!displayNames) return englishName;
+  // tesseract variant codes like "jpn_vert" / "chi_sim_vert": localize the base
+  // language and keep the qualifier from the English label (e.g. "(vertical)")
+  let base = String(code);
+  let hasVariant = false;
+  if (base.endsWith("_vert")) {
+    hasVariant = true;
+    base = base.slice(0, -"_vert".length);
+  }
+  base = tesseractCodeMap[base] || base.split("_")[0];
+  let name;
+  try {
+    name = displayNames.of(base);
+  } catch (e) {
+    return englishName;
+  }
+  if (!name || name === base) return englishName;
+  name = name.charAt(0).toUpperCase() + name.slice(1);
+  if (hasVariant) {
+    const qualifier = englishName?.match(/\(.+\)$/)?.[0];
+    if (qualifier) name += " " + qualifier;
+  }
+  return name;
+}
+
+export function isRtl(lang) {
+  return rtlLangList.includes(lang);
+}
+
+export function getRtlDir(lang) {
+  return rtlLangList.includes(lang) ? "rtl" : "ltr";
+}

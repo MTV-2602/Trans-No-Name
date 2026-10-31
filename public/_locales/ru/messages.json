@@ -1,0 +1,698 @@
+{
+  "MAIN______________________________________": {
+    "message": "ОСНОВНЫЕ                                      "
+  },
+  "MAIN": {
+    "message": "ГЛАВНАЯ"
+  },
+  "Mouse_Tooltip_Translator": {
+    "message": "Trans No Name"
+  },
+  "Translate_When": {
+    "message": "Переводить при"
+  },
+  "Translate_From": {
+    "message": "Переводить с"
+  },
+  "Translate_Into": {
+    "message": "Переводить на"
+  },
+  "Translator_Engine": {
+    "message": "Сервис перевода"
+  },
+  "LLM_Provider": {
+    "message": "Провайдер LLM"
+  },
+  "LLM_Api_Endpoint": {
+    "message": "URL-адрес эндпоинта API LLM"
+  },
+  "LLM_Api_Key": {
+    "message": "API-ключ LLM (необязательно)"
+  },
+  "LLM_Model": {
+    "message": "Модель LLM"
+  },
+  "Mouseover_Text_Type": {
+    "message": "Тип текста при наведении курсора"
+  },
+  "Translate_Into_2": {
+    "message": "Второй язык перевода"
+  },
+  "Writing_Language": {
+    "message": "Язык написания текста"
+  },
+  "Reverse_Translate_Language": {
+    "message": "Язык обратного перевода"
+  },
+  "OCR_Language": {
+    "message": "Язык распознавания текста"
+  },
+  "Detect_Subtitle": {
+    "message": "Режим перевода субтитров"
+  },
+  "KEYBOARD______________________________________": {
+    "message": "КЛАВИШИ"
+  },
+  "KEYBOARD": {
+    "message": "КЛАВИШИ"
+  },
+  "Show_Tooltip_When": {
+    "message": "Показать подсказку когда"
+  },
+  "Voice_When": {
+    "message": "Озвучивать текст — по нажатию"
+  },
+  "Translate_Writing_When": {
+    "message": "Переводить набранный текст — по нажатию"
+  },
+  "Ignore_AltGr_Modifier": {
+    "message": "Игнорировать модификатор AltGr"
+  },
+  "Auto_Reader_When": {
+    "message": "Автоматическое чтение — по нажатию"
+  },
+  "Translate_Page_When": {
+    "message": "Переводить страницу — по нажатию"
+  },
+  "OCR_When": {
+    "message": "Распознавание текста (OCR) — по нажатию"
+  },
+  "Mouseover_Text_Type_Swap_Key": {
+    "message": "Клавиша смены типа текста"
+  },
+  "Speech_Recognition_When": {
+    "message": "Распознавание речи — по нажатию"
+  },
+  "Toggle_Mouseover_Text_Type_When": {
+    "message": "Переключение типа текста — по нажатию"
+  },
+  "Mouseover_Text_Type_Key_Hold": {
+    "message": "Смена типа текста — при удержании"
+  },
+  "Secondary_Language_When": {
+    "message": "Второй язык — по нажатию"
+  },
+  "Swap_Key_Toggle_Mode": {
+    "message": "Смена по нажатию (вместо удержания)"
+  },
+  "Toggle_Extension_When": {
+    "message": "Включение/отключение расширения — по нажатию"
+  },
+  "TTS_Pause_Resume_When": {
+    "message": "Пауза/возобновление озвучки — по нажатию"
+  },
+  "GRAPHIC______________________________________": {
+    "message": "ГРАФИКА"
+  },
+  "GRAPHIC": {
+    "message": "ГРАФИКА"
+  },
+  "Tooltip_Font_Size": {
+    "message": "Размер шрифта подсказки"
+  },
+  "Tooltip_Font_Family": {
+    "message": "Шрифт подсказки"
+  },
+  "Subtitle_Background": {
+    "message": "Фон субтитров"
+  },
+  "Tooltip_Width": {
+    "message": "Ширина подсказки"
+  },
+  "Tooltip_Distance": {
+    "message": "Расстояние до подсказки"
+  },
+  "Tooltip_Animation": {
+    "message": "Анимация подсказки"
+  },
+  "Tooltip_Disappear_Duration": {
+    "message": "Время исчезновения подсказки"
+  },
+  "Tooltip_Position": {
+    "message": "Позиция подсказки"
+  },
+  "Tooltip_Placement": {
+    "message": "Расположение подсказки"
+  },
+  "Above": {
+    "message": "Сверху"
+  },
+  "Below": {
+    "message": "Снизу"
+  },
+  "Tooltip_Text_Align": {
+    "message": "Выравнивание текста в подсказке"
+  },
+  "Tooltip_Background_Blur": {
+    "message": "Размытие фона подсказки"
+  },
+  "Mouseover_Highlight_Text": {
+    "message": "Подсветка текста при наведении курсора"
+  },
+  "Tooltip_Font_Color": {
+    "message": "Цвет шрифта подсказки"
+  },
+  "Tooltip_Background_Color": {
+    "message": "Цвет фона подсказки"
+  },
+  "Tooltip_Border_Color": {
+    "message": "Цвет рамки подсказки"
+  },
+  "Mouseover_Text_Highlight_Color": {
+    "message": "Цвет подсветки текста при наведении курсора"
+  },
+  "Ebook_Theme": {
+    "message": "Тема для электронных книг"
+  },
+  "Setting_Compact_mode": {
+    "message": "Компактный режим настроек"
+  },
+  "VOICE______________________________________": {
+    "message": "ГОЛОСОВЫЕ НАСТРОЙКИ                                      "
+  },
+  "VOICE": {
+    "message": "ГОЛОС"
+  },
+  "Voice_Volume": {
+    "message": "Громкость голоса"
+  },
+  "Voice_Speed": {
+    "message": "Скорость голоса"
+  },
+  "Voice_Target": {
+    "message": "Что озвучивать"
+  },
+  "Voice_Repeat": {
+    "message": "Повтор озвучки"
+  },
+  "Voice_for_": {
+    "message": "Голосовой синтезатор для "
+  },
+  "Voice_speed_for_": {
+    "message": "Скорость речи для "
+  },
+  "EXCLUDE______________________________________": {
+    "message": "ИСКЛЮЧЕНИЯ                                      "
+  },
+  "EXCLUDE": {
+    "message": "ИСКЛЮЧЕНИЯ"
+  },
+  "Exclude_Language": {
+    "message": "Исключить язык"
+  },
+  "Website_Filter_Mode": {
+    "message": "Режим фильтрации сайтов"
+  },
+  "Exclude_Website": {
+    "message": "Чёрный список сайтов"
+  },
+  "Whitelist_Website": {
+    "message": "Белый список сайтов"
+  },
+  "Website_Target_Language": {
+    "message": "Язык перевода для отдельных сайтов (напр. github.com=ru)"
+  },
+  "Block_Current_Site": {
+    "message": "Блокировать текущий сайт"
+  },
+  "Allow_Current_Site": {
+    "message": "Разрешить текущий сайт"
+  },
+  "ADVANCED______________________________________": {
+    "message": "РАСШИРЕННЫЕ НАСТРОЙКИ                                      "
+  },
+  "ADVANCED": {
+    "message": "ДОПОЛНИТЕЛЬНО"
+  },
+  "UI_Language": {
+    "message": "Язык интерфейса"
+  },
+  "Detect_PDF": {
+    "message": "Определять PDF-файлы"
+  },
+  "Mouseover_Text_Type_2": {
+    "message": "Второй тип текста при наведении"
+  },
+  "Mouseover_Pause_Subtitle": {
+    "message": "Пауза субтитров при наведении курсора"
+  },
+  "Show_Tooltip_While_Typing": {
+    "message": "Показывать подсказку при вводе текста"
+  },
+  "Tooltip_Info_Source_Text": {
+    "message": "Исходный текст в подсказке"
+  },
+  "Translate_Exclude_Regex": {
+    "message": "Исключения из перевода (RegEx)"
+  },
+  "Tooltip_Info_Source_Language": {
+    "message": "Исходный язык в подсказке"
+  },
+  "Tooltip_Info_Transliteration": {
+    "message": "Транслитерация исходного текста в подсказке"
+  },
+  "Tooltip_Interval_Time": {
+    "message": "Интервал между подсказками"
+  },
+  "Tooltip_Show_Delay": {
+    "message": "Задержка появления подсказки"
+  },
+  "Tooltip_Word_Dictionary": {
+    "message": "Словарь для слов в подсказке"
+  },
+  "Tooltip_Word_Dictionary_Source": {
+    "message": "Источник словаря в подсказке"
+  },
+  "Fallback_Translator_Engine": {
+    "message": "Резервный сервис перевода"
+  },
+  "SPEECH": {
+    "message": "РЕЧЬ"
+  },
+  "Speech_Recognition_Language": {
+    "message": "Язык распознавания речи"
+  },
+  "Voice_Panel_Translate_Language": {
+    "message": "Язык перевода в голосовой панели"
+  },
+  "Voice_Panel_Text_Target": {
+    "message": "Отображаемый текст в голосовой панели"
+  },
+  "Voice_Panel_Padding": {
+    "message": "Размер отступа голосовой панели"
+  },
+  "Voice_Panel_Text_Align": {
+    "message": "Тип выравнивания текста в голосовой панели"
+  },
+  "Voice_Panel_Source_Font_Size": {
+    "message": "Размер шрифта исходного текста в голосовой панели"
+  },
+  "Voice_Panel_Target_Font_Size": {
+    "message": "Размер шрифта переведённого текста в голосовой панели"
+  },
+  "Voice_Panel_Source_Font_Color": {
+    "message": "Цвет шрифта исходного текста в голосовой панели"
+  },
+  "Voice_Panel_Target_Font_Color": {
+    "message": "Цвет шрифта переведённого текста в голосовой панели"
+  },
+  "Voice_Panel_Source_Border_Color": {
+    "message": "Цвет рамки исходного текста в голосовой панели"
+  },
+  "Voice_Panel_Target_Border_Color": {
+    "message": "Цвет рамки переведённого текста в голосовой панели"
+  },
+  "Voice_Panel_Background_Color": {
+    "message": "Цвет фона голосовой панели"
+  },
+  "BACKUP______________________________________": {
+    "message": "РЕЗЕРВНОЕ КОПИРОВАНИЕ                                      "
+  },
+  "BACKUP": {
+    "message": "РЕЗЕРВ"
+  },
+  "Sync_Setting": {
+    "message": "Синхронизация настроек между устройствами"
+  },
+  "Import_Setting": {
+    "message": "Импорт настроек"
+  },
+  "Export_Setting": {
+    "message": "Экспорт настроек"
+  },
+  "Reset_Setting": {
+    "message": "Сброс настроек"
+  },
+  "About______________________________________": {
+    "message": "О программе                                      "
+  },
+  "How_to_use": {
+    "message": "Инструкция"
+  },
+  "Check_how_to_use_this_extension": {
+    "message": "Изучить инструкцию по использованию расширения"
+  },
+  "PDF_Viewer": {
+    "message": "Просмотр PDF-файла"
+  },
+  "Translate_local_PDF_file": {
+    "message": "Перевести локальный PDF-файл"
+  },
+  "Ebook_Reader": {
+    "message": "Просмотр электронных книг"
+  },
+  "Translate_local_ebook_file": {
+    "message": "Перевести локальный файл электронной книги"
+  },
+  "Twitter": {
+    "message": "X"
+  },
+  "Retweet_twitter_post": {
+    "message": "Поделиться в X"
+  },
+  "Review_Page": {
+    "message": "Отзывы"
+  },
+  "Comment_on_this_extension": {
+    "message": "Написать отзыв"
+  },
+  "Source_code": {
+    "message": "Исходный код"
+  },
+  "Check_source_code_in_github": {
+    "message": "Посмотреть исходный код на GitHub"
+  },
+  "Privacy_Policy": {
+    "message": "Политика конфиденциальности"
+  },
+  "User_privacy_policy": {
+    "message": "Политика конфиденциальности пользователей"
+  },
+  "Voice_Panel": {
+    "message": "Голосовая панель"
+  },
+  "Translate_Voice": {
+    "message": "Голосовой перевод"
+  },
+  "Review______________________________________": {
+    "message": "Оценить                                      "
+  },
+  "Review_this": {
+    "message": "Оценить работу данного расширения"
+  },
+  "Coffee______________________________________": {
+    "message": "Поддержать разработчика                                      "
+  },
+  "Title______________________________________": {
+    "message": "Название                                      "
+  },
+  "SELECT_OPTION______________________________": {
+    "message": "ВЫБЕРИТЕ ОПЦИЮ                              "
+  },
+  "On": {
+    "message": "Вкл."
+  },
+  "Off": {
+    "message": "Выкл."
+  },
+  "Auto": {
+    "message": "Авто"
+  },
+  "None": {
+    "message": "Не выбрано"
+  },
+  "Select": {
+    "message": "Выделение"
+  },
+  "Mouseover": {
+    "message": "Наведение курсора"
+  },
+  "Mouseover_n_Select": {
+    "message": "Наведение и выделение"
+  },
+  "Follow": {
+    "message": "Следовать за курсором"
+  },
+  "Fixed": {
+    "message": "Фиксированная"
+  },
+  "Top_Right": {
+    "message": "Сверху справа"
+  },
+  "Fade": {
+    "message": "Затухание"
+  },
+  "Scale": {
+    "message": "Масштабирование"
+  },
+  "Shift_away": {
+    "message": "Сдвиг от курсора"
+  },
+  "Shift_toward": {
+    "message": "Сдвиг к курсору"
+  },
+  "Perspective": {
+    "message": "Перспектива"
+  },
+  "Word": {
+    "message": "Слово"
+  },
+  "Sentence": {
+    "message": "Предложение"
+  },
+  "Container": {
+    "message": "Контейнер"
+  },
+  "Both": {
+    "message": "Оба списка"
+  },
+  "Blacklist": {
+    "message": "Чёрный список"
+  },
+  "Whitelist": {
+    "message": "Белый список"
+  },
+  "Source": {
+    "message": "Оригинал"
+  },
+  "Source_Text": {
+    "message": "Текст оригинала"
+  },
+  "Translated_Text": {
+    "message": "Переведённый текст"
+  },
+  "Source_n_Translated": {
+    "message": "Оригинал и перевод"
+  },
+  "Translated_n_Source": {
+    "message": "Перевод и оригинал"
+  },
+  "Dual_Subtitle": {
+    "message": "Двойные субтитры"
+  },
+  "Target_Single_Subtitle": {
+    "message": "Только перевод"
+  },
+  "Source_Single_Subtitle": {
+    "message": "Только оригинал"
+  },
+  "Always": {
+    "message": "Всегда"
+  },
+  "Center": {
+    "message": "По центру"
+  },
+  "Left": {
+    "message": "Слева"
+  },
+  "Right": {
+    "message": "Справа"
+  },
+  "Justify": {
+    "message": "По ширине"
+  },
+  "Light": {
+    "message": "Светлая"
+  },
+  "Dark": {
+    "message": "Тёмная"
+  },
+  "Default": {
+    "message": "По умолчанию"
+  },
+  "Ctrl_Left": {
+    "message": "Левый Ctrl"
+  },
+  "Ctrl_Right": {
+    "message": "Правый Ctrl"
+  },
+  "Alt_Left": {
+    "message": "Левый Alt"
+  },
+  "Alt_Right": {
+    "message": "Правый Alt"
+  },
+  "Shift_Left": {
+    "message": "Левый Shift"
+  },
+  "Shift_Right": {
+    "message": "Правый Shift"
+  },
+  "Meta_Left": {
+    "message": "Левая клавиша Windows"
+  },
+  "Meta_Right": {
+    "message": "Правая клавиша Windows"
+  },
+  "Click_Left": {
+    "message": "Клик левой кнопкой мыши"
+  },
+  "Click_Middle": {
+    "message": "Клик средней кнопкой мыши"
+  },
+  "Click_Right": {
+    "message": "Клик правой кнопкой мыши"
+  },
+  "google": {
+    "message": "Google"
+  },
+  "bing": {
+    "message": "Bing"
+  },
+  "Saved_Words": {
+    "message": "Сохранённые слова"
+  },
+  "Group": {
+    "message": "Группа"
+  },
+  "All": {
+    "message": "Все"
+  },
+  "Move_to_group": {
+    "message": "Переместить в группу"
+  },
+  "Delete": {
+    "message": "Удалить"
+  },
+  "Clear": {
+    "message": "Очистить"
+  },
+  "selected": {
+    "message": "выбрано"
+  },
+  "Date": {
+    "message": "Дата"
+  },
+  "Translation": {
+    "message": "Перевод"
+  },
+  "No_saved_words_yet": {
+    "message": "Сохранённых слов пока нет"
+  },
+  "Manage_Groups": {
+    "message": "Управление группами"
+  },
+  "Remove_all": {
+    "message": "Удалить все"
+  },
+  "Import_CSV": {
+    "message": "Импорт CSV"
+  },
+  "Download_CSV": {
+    "message": "Скачать CSV"
+  },
+  "Save_key": {
+    "message": "Клавиша сохранения"
+  },
+  "Highlight_on_page": {
+    "message": "Подсветка на странице"
+  },
+  "Right_click_menu": {
+    "message": "Контекстное меню"
+  },
+  "Add_right_click_context_menu": {
+    "message": "Добавить в контекстное меню"
+  },
+  "Done": {
+    "message": "Готово"
+  },
+  "On_Select": {
+    "message": "При выделении"
+  },
+  "On_Hover": {
+    "message": "При наведении"
+  },
+  "On_Select_n_Hover": {
+    "message": "При выделении и наведении"
+  },
+  "Select_group_to_play": {
+    "message": "Выберите группу для карточек"
+  },
+  "No_Group_Selected": {
+    "message": "Группа не выбрана"
+  },
+  "Check_groups_to_play": {
+    "message": "Отметьте группы для карточек"
+  },
+  "Flashcard_makes_cards_from_your_saved_words": {
+    "message": "Карточки создаются из ваших сохранённых слов"
+  },
+  "Flashcard": {
+    "message": "Флеш-карточки"
+  },
+  "Play_Flashcard": {
+    "message": "Начать повторение"
+  },
+  "Reset_progress": {
+    "message": "Сбросить прогресс"
+  },
+  "No_History_Data": {
+    "message": "Нет данных истории"
+  },
+  "Today_play_is_completed": {
+    "message": "Повторение на сегодня завершено"
+  },
+  "Try_on_next_day": {
+    "message": "Возвращайтесь завтра"
+  },
+  "No_more_card_to_learn_today": {
+    "message": "На сегодня карточек больше нет"
+  },
+  "Add_more_history_data_to_play_with": {
+    "message": "Добавьте больше слов в историю"
+  },
+  "Finish": {
+    "message": "Готово"
+  },
+  "Today_Flashcards_are_Completed": {
+    "message": "Карточки на сегодня пройдены"
+  },
+  "No_More_Card_Data": {
+    "message": "Карточки закончились"
+  },
+  "Show_Answer": {
+    "message": "Показать ответ"
+  },
+  "Again": {
+    "message": "Снова"
+  },
+  "Hard": {
+    "message": "Трудно"
+  },
+  "Good": {
+    "message": "Хорошо"
+  },
+  "Easy": {
+    "message": "Легко"
+  },
+  "New": {
+    "message": "Новые"
+  },
+  "Review": {
+    "message": "Повторение"
+  },
+  "Learning": {
+    "message": "Изучение"
+  },
+  "About": {
+    "message": "О программе"
+  },
+  "Translator": {
+    "message": "Переводчик"
+  },
+  "Wiktionary": {
+    "message": "Викисловарь"
+  },
+  "Translated": {
+    "message": "Перевод"
+  },
+  "Custom": {
+    "message": "Свой вариант"
+  },
+  "appName": {
+    "message": "Trans No Name"
+  },
+  "appDesc": {
+    "message": "Переводчик контекста мышью переводит текст при наведении, используя Google Переводчик. Поддерживает OCR, TTS, перевод манги и PDF."
+  }
+}

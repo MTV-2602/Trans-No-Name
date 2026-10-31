@@ -1,0 +1,824 @@
+{
+  "MAIN______________________________________": {
+    "message": "MAIN                                      "
+  },
+  "MAIN": {
+    "message": "Cơ bản"
+  },
+  "Mouse_Tooltip_Translator": {
+    "message": "Trans No Name"
+  },
+  "Translate_When": {
+    "message": "Dịch khi rê chuột (Tooltip)"
+  },
+  "Translate_From": {
+    "message": "Dịch từ ngôn ngữ"
+  },
+  "Translate_Into": {
+    "message": "Dịch sang ngôn ngữ"
+  },
+  "Translator_Engine": {
+    "message": "Công cụ dịch"
+  },
+  "LLM_Provider": {
+    "message": "LLM Provider"
+  },
+  "LLM_Api_Endpoint": {
+    "message": "LLM API Endpoint URL"
+  },
+  "LLM_Api_Key": {
+    "message": "LLM API Key"
+  },
+  "LLM_Model": {
+    "message": "LLM Model"
+  },
+  "Mouseover_Text_Type": {
+    "message": "Loại văn bản khi rê chuột"
+  },
+  "Translate_Into_2": {
+    "message": "Dịch sang ngôn ngữ phụ"
+  },
+  "Writing_Language": {
+    "message": "Dịch ô chat sang ngôn ngữ"
+  },
+  "Reverse_Translate_Language": {
+    "message": "Ngôn ngữ dịch ngược"
+  },
+  "OCR_Language": {
+    "message": "Ngôn ngữ nhận dạng ảnh (OCR)"
+  },
+  "Detect_Subtitle": {
+    "message": "Phụ đề song ngữ video"
+  },
+  "KEYBOARD______________________________________": {
+    "message": "KEYBOARD                                      "
+  },
+  "KEYBOARD": {
+    "message": "Bàn phím"
+  },
+  "Show_Tooltip_When": {
+    "message": "Hiện chú thích dịch khi"
+  },
+  "Voice_When": {
+    "message": "Phát âm giọng đọc khi"
+  },
+  "Translate_Writing_When": {
+    "message": "Phím tắt dịch nhanh ô chat"
+  },
+  "Ignore_AltGr_Modifier": {
+    "message": "Bỏ qua phím AltGr khi gõ chữ"
+  },
+  "Auto_Reader_When": {
+    "message": "Tự động đọc bài khi bấm"
+  },
+  "Translate_Page_When": {
+    "message": "Dịch toàn bộ trang web khi bấm"
+  },
+  "OCR_When": {
+    "message": "Chụp ảnh dịch (OCR) khi"
+  },
+  "Mouseover_Text_Type_Swap_Key": {
+    "message": "Phím hoán đổi kiểu văn bản rê chuột"
+  },
+  "Speech_Recognition_When": {
+    "message": "Nhận dạng giọng nói khi bấm"
+  },
+  "Toggle_Mouseover_Text_Type_When": {
+    "message": "Bật/Tắt kiểu văn bản rê chuột khi"
+  },
+  "Mouseover_Text_Type_Key_Hold": {
+    "message": "Giữ phím để đổi kiểu văn bản rê chuột"
+  },
+  "Secondary_Language_When": {
+    "message": "Dịch sang ngôn ngữ phụ khi bấm"
+  },
+  "Swap_Key_Toggle_Mode": {
+    "message": "Chế độ bấm để bật/tắt (thay vì giữ phím)"
+  },
+  "Toggle_Extension_When": {
+    "message": "Bật/Tắt tiện ích khi bấm"
+  },
+  "TTS_Pause_Resume_When": {
+    "message": "Tạm dừng / Tiếp tục giọng đọc khi bấm"
+  },
+  "GRAPHIC______________________________________": {
+    "message": "GRAPHIC                                      "
+  },
+  "GRAPHIC": {
+    "message": "Giao diện"
+  },
+  "Tooltip_Font_Size": {
+    "message": "Cỡ chữ chú thích"
+  },
+  "Tooltip_Font_Family": {
+    "message": "Phông chữ chú thích"
+  },
+  "Subtitle_Background": {
+    "message": "Nền phụ đề video"
+  },
+  "Tooltip_Width": {
+    "message": "Độ rộng chú thích"
+  },
+  "Tooltip_Distance": {
+    "message": "Khoản cách công cụ"
+  },
+  "Tooltip_Animation": {
+    "message": "Hoạt ảnh công cụ"
+  },
+  "Tooltip_Disappear_Duration": {
+    "message": "Thời gian tự ẩn chú thích"
+  },
+  "Tooltip_Position": {
+    "message": "Vị trí công cụ"
+  },
+  "Tooltip_Placement": {
+    "message": "Vị trí hiển thị chú thích"
+  },
+  "Above": {
+    "message": "Phía trên"
+  },
+  "Below": {
+    "message": "Phía dưới"
+  },
+  "Tooltip_Text_Align": {
+    "message": "Căn chỉnh công cụ"
+  },
+  "Tooltip_Background_Blur": {
+    "message": "Làm mờ nền công cụ"
+  },
+  "Mouseover_Highlight_Text": {
+    "message": "Di chuột làm nổi bật văn bản"
+  },
+  "Tooltip_Font_Color": {
+    "message": "Màu chữ chú thích"
+  },
+  "Tooltip_Background_Color": {
+    "message": "Màu nền chú thích"
+  },
+  "Tooltip_Border_Color": {
+    "message": "Màu viền chú thích"
+  },
+  "Mouseover_Text_Highlight_Color": {
+    "message": "Màu của văn bản nổi bật"
+  },
+  "Ebook_Theme": {
+    "message": "Giao diện Ebook"
+  },
+  "Setting_Compact_mode": {
+    "message": "Chế độ cài đặt thu gọn"
+  },
+  "VOICE______________________________________": {
+    "message": "VOICE                                      "
+  },
+  "VOICE": {
+    "message": "Giọng đọc"
+  },
+  "Voice_Volume": {
+    "message": "Âm lượng giọng đọc"
+  },
+  "Voice_Speed": {
+    "message": "Tốc độ giọng đọc"
+  },
+  "Voice_Target": {
+    "message": "Đối tượng phát âm"
+  },
+  "Voice_Repeat": {
+    "message": "Lặp lại giọng đọc"
+  },
+  "Voice_for_": {
+    "message": "Giọng đọc cho "
+  },
+  "Voice_speed_for_": {
+    "message": "Tốc độ đọc cho "
+  },
+  "EXCLUDE______________________________________": {
+    "message": "EXCLUDE                                      "
+  },
+  "EXCLUDE": {
+    "message": "Loại trừ"
+  },
+  "Exclude_Language": {
+    "message": "Ngôn ngữ không dịch"
+  },
+  "Website_Filter_Mode": {
+    "message": "Chế độ lọc trang web"
+  },
+  "Exclude_Website": {
+    "message": "Trang web không dịch"
+  },
+  "Whitelist_Website": {
+    "message": "Trang web cho phép dịch"
+  },
+  "Website_Target_Language": {
+    "message": "Website Target Language"
+  },
+  "Block_Current_Site": {
+    "message": "Chặn trang web hiện tại"
+  },
+  "Allow_Current_Site": {
+    "message": "Cho phép trang web hiện tại"
+  },
+  "ADVANCED______________________________________": {
+    "message": "ADVANCED                                      "
+  },
+  "ADVANCED": {
+    "message": "Nâng cao"
+  },
+  "UI_Language": {
+    "message": "Ngôn ngữ giao diện"
+  },
+  "Detect_PDF": {
+    "message": "Nhận diện PDF"
+  },
+  "Mouseover_Text_Type_2": {
+    "message": "Loại văn bản ngôn ngữ phụ"
+  },
+  "Mouseover_Pause_Subtitle": {
+    "message": "Chuột di vào phụ đề sẽ Tạm Dừng"
+  },
+  "Show_Tooltip_While_Typing": {
+    "message": "Hiện chú thích khi đang gõ chữ"
+  },
+  "Tooltip_Info_Source_Text": {
+    "message": "Hiện văn bản gốc trong chú thích"
+  },
+  "Translate_Exclude_Regex": {
+    "message": "Biểu thức loại trừ (Regex)"
+  },
+  "Tooltip_Info_Source_Language": {
+    "message": "Hiện ngôn ngữ nguồn"
+  },
+  "Tooltip_Info_Transliteration": {
+    "message": "Hiện phiên âm đọc"
+  },
+  "Tooltip_Interval_Time": {
+    "message": "Thời gian của công cụ"
+  },
+  "Tooltip_Show_Delay": {
+    "message": "Độ trễ trước khi hiện chú thích"
+  },
+  "Tooltip_Word_Dictionary": {
+    "message": "Tra từ điển từ vựng"
+  },
+  "Tooltip_Word_Dictionary_Source": {
+    "message": "Nguồn từ điển tra từ"
+  },
+  "Fallback_Translator_Engine": {
+    "message": "Bộ dịch dự phòng khi lỗi"
+  },
+  "SPEECH": {
+    "message": "Giọng nói"
+  },
+  "Speech_Recognition_Language": {
+    "message": "Ngôn ngữ nhận dạng giọng nói"
+  },
+  "Voice_Panel_Translate_Language": {
+    "message": "Ngôn ngữ dịch giọng nói"
+  },
+  "Voice_Panel_Text_Target": {
+    "message": "Văn bản hiển thị bảng giọng nói"
+  },
+  "Voice_Panel_Padding": {
+    "message": "Bảng đệm của giọng nói"
+  },
+  "Voice_Panel_Text_Align": {
+    "message": "Bảng căn chỉnh của giọng nói"
+  },
+  "Voice_Panel_Source_Font_Size": {
+    "message": "Kích thước phông chữ Nguồn của bản điều khiển giọng nói"
+  },
+  "Voice_Panel_Target_Font_Size": {
+    "message": "Kích thước phông chữ Mục Tiêu của bản điều khiển giọng nói"
+  },
+  "Voice_Panel_Source_Font_Color": {
+    "message": "Màu NGUỒN của bản điều khiển giọng nói"
+  },
+  "Voice_Panel_Target_Font_Color": {
+    "message": "Màu MỤC TIÊU của bản điều khiển giọng nói"
+  },
+  "Voice_Panel_Source_Border_Color": {
+    "message": "Viền NGUỒN của bản điều khiển giọng nói"
+  },
+  "Voice_Panel_Target_Border_Color": {
+    "message": "Viền MỤC TIÊU của bản điều khiển giọng nói"
+  },
+  "Voice_Panel_Background_Color": {
+    "message": "Bảng màu nền của giọng nói"
+  },
+  "BACKUP______________________________________": {
+    "message": "BACKUP                                      "
+  },
+  "BACKUP": {
+    "message": "Sao lưu"
+  },
+  "Sync_Setting": {
+    "message": "Sync Setting"
+  },
+  "Import_Setting": {
+    "message": "Nhập tệp cài đặt"
+  },
+  "Export_Setting": {
+    "message": "Xuất tệp cài đặt"
+  },
+  "Reset_Setting": {
+    "message": "Đặt lại cài đặt mặc định"
+  },
+  "About______________________________________": {
+    "message": "About                                      "
+  },
+  "How_to_use": {
+    "message": "Cách sử dụng"
+  },
+  "Check_how_to_use_this_extension": {
+    "message": "Xem hướng dẫn sử dụng"
+  },
+  "PDF_Viewer": {
+    "message": "Trình xem & dịch PDF"
+  },
+  "Translate_local_PDF_file": {
+    "message": "Dịch tệp PDF trên máy tính"
+  },
+  "Ebook_Reader": {
+    "message": "Trình đọc & dịch Ebook"
+  },
+  "Translate_local_ebook_file": {
+    "message": "Dịch tệp Ebook trên máy tính"
+  },
+  "Twitter": {
+    "message": "Twitter"
+  },
+  "Retweet_twitter_post": {
+    "message": "Chia sẻ bài viết lên Twitter"
+  },
+  "Review_Page": {
+    "message": "Trang đánh giá"
+  },
+  "Comment_on_this_extension": {
+    "message": "Nhận xét về tiện ích"
+  },
+  "Source_code": {
+    "message": "Mã nguồn"
+  },
+  "Check_source_code_in_github": {
+    "message": "Xem mã nguồn trên GitHub"
+  },
+  "Privacy_Policy": {
+    "message": "Chính sách quyền riêng tư"
+  },
+  "User_privacy_policy": {
+    "message": "Chính sách quyền riêng tư người dùng"
+  },
+  "Voice_Panel": {
+    "message": "Bảng điều khiển giọng nói"
+  },
+  "Translate_Voice": {
+    "message": "Dịch giọng nói"
+  },
+  "Review______________________________________": {
+    "message": "Review                                      "
+  },
+  "Review_this": {
+    "message": "Review this"
+  },
+  "Coffee______________________________________": {
+    "message": "Coffee                                      "
+  },
+  "Title______________________________________": {
+    "message": "Tiêu đề                                      "
+  },
+  "SELECT_OPTION______________________________": {
+    "message": "SELECT OPTION                              "
+  },
+  "On": {
+    "message": "Bật"
+  },
+  "Off": {
+    "message": "Tắt"
+  },
+  "Auto": {
+    "message": "Tự động"
+  },
+  "None": {
+    "message": "Không có"
+  },
+  "Select": {
+    "message": "Bôi đen chọn"
+  },
+  "Mouseover": {
+    "message": "Rê chuột"
+  },
+  "Mouseover_n_Select": {
+    "message": "Rê chuột & Bôi đen"
+  },
+  "Follow": {
+    "message": "Đi theo chuột"
+  },
+  "Fixed": {
+    "message": "Cố định"
+  },
+  "Top_Right": {
+    "message": "Góc trên phải"
+  },
+  "Fade": {
+    "message": "Mờ dần"
+  },
+  "Scale": {
+    "message": "Thu phóng"
+  },
+  "Shift_away": {
+    "message": "Trượt ra xa"
+  },
+  "Shift_toward": {
+    "message": "Trượt lại gần"
+  },
+  "Perspective": {
+    "message": "Phối cảnh 3D"
+  },
+  "Word": {
+    "message": "Từ đơn"
+  },
+  "Sentence": {
+    "message": "Cả câu"
+  },
+  "Container": {
+    "message": "Đoạn văn"
+  },
+  "Both": {
+    "message": "Cả hai"
+  },
+  "Blacklist": {
+    "message": "Danh sách chặn"
+  },
+  "Whitelist": {
+    "message": "Danh sách cho phép"
+  },
+  "Source": {
+    "message": "Văn bản gốc"
+  },
+  "Source_Text": {
+    "message": "Văn bản gốc"
+  },
+  "Translated_Text": {
+    "message": "Văn bản đã dịch"
+  },
+  "Source_n_Translated": {
+    "message": "Gốc & Đã dịch"
+  },
+  "Translated_n_Source": {
+    "message": "Đã dịch & Gốc"
+  },
+  "Dual_Subtitle": {
+    "message": "Phụ đề song ngữ"
+  },
+  "Target_Single_Subtitle": {
+    "message": "Chỉ phụ đề dịch"
+  },
+  "Source_Single_Subtitle": {
+    "message": "Chỉ phụ đề gốc"
+  },
+  "Always": {
+    "message": "Luôn luôn"
+  },
+  "Center": {
+    "message": "Ở giữa"
+  },
+  "Left": {
+    "message": "Bên trái"
+  },
+  "Right": {
+    "message": "Bên phải"
+  },
+  "Justify": {
+    "message": "Căn đều"
+  },
+  "Light": {
+    "message": "Sáng"
+  },
+  "Dark": {
+    "message": "Đen xám"
+  },
+  "Default": {
+    "message": "Mặc định"
+  },
+  "Ctrl_Left": {
+    "message": "Ctrl Trái"
+  },
+  "Ctrl_Right": {
+    "message": "Ctrl Phải"
+  },
+  "Alt_Left": {
+    "message": "Alt Trái"
+  },
+  "Alt_Right": {
+    "message": "Alt Phải"
+  },
+  "Shift_Left": {
+    "message": "Shift Trái"
+  },
+  "Shift_Right": {
+    "message": "Shift Phải"
+  },
+  "Meta_Left": {
+    "message": "Phím Win/Cmd Trái"
+  },
+  "Meta_Right": {
+    "message": "Phím Win/Cmd Phải"
+  },
+  "Click_Left": {
+    "message": "Chuột Trái"
+  },
+  "Click_Middle": {
+    "message": "Chuột Giữa"
+  },
+  "Click_Right": {
+    "message": "Chuột Phải"
+  },
+  "google": {
+    "message": "google"
+  },
+  "bing": {
+    "message": "bing"
+  },
+  "Saved_Words": {
+    "message": "Từ đã lưu"
+  },
+  "Group": {
+    "message": "Nhóm"
+  },
+  "All": {
+    "message": "Tất cả"
+  },
+  "Move_to_group": {
+    "message": "Chuyển vào nhóm"
+  },
+  "Delete": {
+    "message": "Phím Delete"
+  },
+  "Clear": {
+    "message": "Dọn sạch"
+  },
+  "selected": {
+    "message": "đã chọn"
+  },
+  "Date": {
+    "message": "Ngày lưu"
+  },
+  "Translation": {
+    "message": "Bản dịch"
+  },
+  "No_saved_words_yet": {
+    "message": "Chưa có từ nào được lưu"
+  },
+  "Manage_Groups": {
+    "message": "Quản lý nhóm từ"
+  },
+  "Remove_all": {
+    "message": "Xóa tất cả"
+  },
+  "Import_CSV": {
+    "message": "Nhập tệp CSV"
+  },
+  "Download_CSV": {
+    "message": "Tải về tệp CSV"
+  },
+  "Save_key": {
+    "message": "Phím lưu từ"
+  },
+  "Highlight_on_page": {
+    "message": "Đánh dấu nổi trên trang web"
+  },
+  "Right_click_menu": {
+    "message": "Menu chuột phải"
+  },
+  "Add_right_click_context_menu": {
+    "message": "Thêm vào menu chuột phải"
+  },
+  "Done": {
+    "message": "Hoàn thành"
+  },
+  "On_Select": {
+    "message": "Khi bôi đen"
+  },
+  "On_Hover": {
+    "message": "Khi rê chuột"
+  },
+  "On_Select_n_Hover": {
+    "message": "Khi bôi đen & rê chuột"
+  },
+  "Select_group_to_play": {
+    "message": "Chọn nhóm để học"
+  },
+  "No_Group_Selected": {
+    "message": "Chưa chọn nhóm nào"
+  },
+  "Check_groups_to_play": {
+    "message": "Đánh dấu các nhóm muốn học"
+  },
+  "Flashcard_makes_cards_from_your_saved_words": {
+    "message": "Học từ vựng từ các từ bạn đã lưu"
+  },
+  "Flashcard": {
+    "message": "Thẻ từ vựng (Flashcard)"
+  },
+  "Play_Flashcard": {
+    "message": "Học từ vựng Flashcard"
+  },
+  "Reset_progress": {
+    "message": "Đặt lại tiến độ"
+  },
+  "No_History_Data": {
+    "message": "Chưa có từ vựng nào"
+  },
+  "Today_play_is_completed": {
+    "message": "Đã hoàn thành bài học hôm nay"
+  },
+  "Try_on_next_day": {
+    "message": "Hãy quay lại vào ngày mai nhé"
+  },
+  "No_more_card_to_learn_today": {
+    "message": "Không còn thẻ nào cần học hôm nay"
+  },
+  "Add_more_history_data_to_play_with": {
+    "message": "Hãy lưu thêm từ vựng để học tiếp"
+  },
+  "Finish": {
+    "message": "Kết thúc"
+  },
+  "Today_Flashcards_are_Completed": {
+    "message": "Đã hoàn thành thẻ từ vựng hôm nay"
+  },
+  "No_More_Card_Data": {
+    "message": "Hết dữ liệu thẻ"
+  },
+  "Show_Answer": {
+    "message": "Hiện đáp án"
+  },
+  "Again": {
+    "message": "Học lại"
+  },
+  "Hard": {
+    "message": "Khó"
+  },
+  "Good": {
+    "message": "Tốt"
+  },
+  "Easy": {
+    "message": "Dễ"
+  },
+  "New": {
+    "message": "Mới"
+  },
+  "Review": {
+    "message": "Ôn tập"
+  },
+  "Learning": {
+    "message": "Đang học"
+  },
+  "About": {
+    "message": "Giới thiệu"
+  },
+  "Translator": {
+    "message": "Bộ dịch"
+  },
+  "Wiktionary": {
+    "message": "Từ điển Wiktionary"
+  },
+  "Translated": {
+    "message": "Đã dịch"
+  },
+  "Custom": {
+    "message": "Tùy chỉnh"
+  },
+  "appName": {
+    "message": "Trans No Name"
+  },
+  "appDesc": {
+    "message": "Trans No Name - Tác giả MTV-2602: Dịch văn bản ô chat, rê chuột, PDF, video & manga"
+  },
+  "CHAT": {
+    "message": "Dịch ô chat"
+  },
+  "Show_Writing_Translate_Bubble": {
+    "message": "Hiện nút nổi dịch nhanh ô chat"
+  },
+  "Writing_Bubble_Size": {
+    "message": "Kích thước nút nổi dịch chat"
+  },
+  "Writing_Bubble_Color": {
+    "message": "Màu sắc nút nổi"
+  },
+  "Writing_Bubble_Opacity": {
+    "message": "Độ trong suốt nút nổi"
+  },
+  "Writing_Bubble_Icon": {
+    "message": "Kiểu biểu tượng trên nút nổi"
+  },
+  "Small": {
+    "message": "Nhỏ (36px)"
+  },
+  "Medium": {
+    "message": "Vừa (46px - Mặc định)"
+  },
+  "Large": {
+    "message": "Lớn (56px)"
+  },
+  "Teal": {
+    "message": "Xanh ngọc"
+  },
+  "Blue": {
+    "message": "Xanh dương"
+  },
+  "Green": {
+    "message": "Xanh lá"
+  },
+  "Purple": {
+    "message": "Tím"
+  },
+  "Orange": {
+    "message": "Cam"
+  },
+  "Red": {
+    "message": "Đỏ"
+  },
+  "Target_Language": {
+    "message": "Mã ngôn ngữ đích (EN, VI...)"
+  },
+  "Translate_Icon": {
+    "message": "Ký hiệu dịch (文A)"
+  },
+  "Chat_Icon": {
+    "message": "Biểu tượng ô chat (💬)"
+  },
+  "Sparkle_Icon": {
+    "message": "Biểu tượng tia sáng (✨)"
+  },
+  "Writing_Bubble_Custom_Text": {
+    "message": "Chữ / Biểu tượng tùy thích trên nút nổi"
+  },
+  "Writing_Bubble_Custom_Color": {
+    "message": "Màu sắc tự chọn cho nút nổi (Bảng màu)"
+  },
+  "Space": {
+    "message": "Phím Cách (Space)"
+  },
+  "Enter": {
+    "message": "Phím Enter"
+  },
+  "Tab": {
+    "message": "Phím Tab"
+  },
+  "Escape": {
+    "message": "Phím Escape (Esc)"
+  },
+  "Backquote": {
+    "message": "Phím dấu ngã (~ / )"
+  },
+  "CapsLock": {
+    "message": "Phím CapsLock"
+  },
+  "F1": {
+    "message": "Phím F1"
+  },
+  "F3": {
+    "message": "Phím F3"
+  },
+  "F4": {
+    "message": "Phím F4"
+  },
+  "F5": {
+    "message": "Phím F5"
+  },
+  "F6": {
+    "message": "Phím F6"
+  },
+  "F7": {
+    "message": "Phím F7"
+  },
+  "F10": {
+    "message": "Phím F10"
+  },
+  "F11": {
+    "message": "Phím F11"
+  },
+  "F12": {
+    "message": "Phím F12"
+  },
+  "Insert": {
+    "message": "Phím Insert"
+  },
+  "Home": {
+    "message": "Phím Home"
+  },
+  "End": {
+    "message": "Phím End"
+  },
+  "PageUp": {
+    "message": "Phím PageUp"
+  },
+  "PageDown": {
+    "message": "Phím PageDown"
+  },
+  "ContextMenu": {
+    "message": "Phím Menu Chuột Phải"
+  }
+}

@@ -1,0 +1,88 @@
+"use strict";
+
+//interact user setting,
+// handle save setting
+//use popup.vue file
+
+// load vue and component
+import { createApp } from "vue";
+import App from "/src/App.vue";
+import router from "/src/router";
+// import PopupWindow from "/src/components/popupWindow.vue";
+
+//pinia
+import { createPinia } from "pinia";
+
+// vuetify main
+import "vuetify/styles";
+import { createVuetify } from "vuetify";
+import * as components from "vuetify/components";
+import * as directives from "vuetify/directives";
+import "typeface-roboto/index.css"; //font for vuetify
+import "@mdi/font/css/materialdesignicons.css"; // Ensure you are using css-loader
+import "vuetify/dist/vuetify.min.css"; //vuetify css
+// input mask
+import { vMaska } from "maska";
+
+import SettingUtil from "/src/util/setting_util.js";
+import * as i18n from "/src/util/i18n.js";
+import browser from "webextension-polyfill";
+
+var lang = SettingUtil.getDefaultLang();
+var messages = {};
+messages[lang] = { open: "Open", close: "Close" };
+
+const prefersDarkTheme = window?.matchMedia?.("(prefers-color-scheme: dark)")?.matches;
+
+const vuetify = createVuetify({
+  components,
+  directives,
+  locale: {
+    locale: lang,
+    fallback: "en",
+    messages,
+  },
+  theme: {
+    defaultTheme: prefersDarkTheme ? "dark" : "light", // Set theme based on OS preference
+    themes: {
+      dark: {
+        colors: {
+          primary: "#0D47A1", // Darker blue for primary color
+          secondary: "#424242", // Customize secondary color
+        },
+      },
+      light: {
+        colors: {
+          primary: "#2196F3", // Brighter blue for primary color in light theme
+          secondary: "#424242",
+        },
+      },
+    },
+    options: {
+      customProperties: true,
+    },
+  },
+});
+
+// load the chosen UI language (#76) before mounting so the first render is
+// already localized, then build the app
+(async () => {
+  try {
+    const setting = await SettingUtil.loadSetting();
+    const uiLang = (setting["uiLanguage"] && setting["uiLanguage"] !== "auto") ? setting["uiLanguage"] : "vi";
+    await i18n.loadUiLanguage(uiLang);
+  } catch (e) {
+    console.log(e);
+  }
+
+  const app = createApp(App);
+  // global i18n helper: {{ $t("Saved_Words") }} -> localized message (key fallback)
+  app.config.globalProperties.$t = i18n.t;
+  app
+    .directive("maska", vMaska)
+    .use(vuetify)
+    .use(createPinia())
+    .use(router)
+    // .component("popupWindow", PopupWindow)
+    .mount("#app");
+})();

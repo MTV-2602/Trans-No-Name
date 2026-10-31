@@ -1,0 +1,698 @@
+{
+  "MAIN______________________________________": {
+    "message": "หลัก                                      "
+  },
+  "MAIN": {
+    "message": "หน้าหลัก"
+  },
+  "Mouse_Tooltip_Translator": {
+    "message": "Trans No Name"
+  },
+  "Translate_When": {
+    "message": "แปลเมื่อ"
+  },
+  "Translate_From": {
+    "message": "แปลจาก"
+  },
+  "Translate_Into": {
+    "message": "แปลเป็น"
+  },
+  "Translator_Engine": {
+    "message": "นักแปล"
+  },
+  "LLM_Provider": {
+    "message": "LLM Provider"
+  },
+  "LLM_Api_Endpoint": {
+    "message": "LLM API Endpoint URL"
+  },
+  "LLM_Api_Key": {
+    "message": "LLM API Key"
+  },
+  "LLM_Model": {
+    "message": "LLM Model"
+  },
+  "Mouseover_Text_Type": {
+    "message": "ประเภทข้อความ"
+  },
+  "Translate_Into_2": {
+    "message": "Secondary Translate Into"
+  },
+  "Writing_Language": {
+    "message": "แปลภาษาพิมพ์"
+  },
+  "Reverse_Translate_Language": {
+    "message": "ย้อนกลับแปลภาษา"
+  },
+  "OCR_Language": {
+    "message": "แปลภาษา OCR"
+  },
+  "Detect_Subtitle": {
+    "message": "ตรวจจับคำบรรยาย"
+  },
+  "KEYBOARD______________________________________": {
+    "message": "KEYBOARD                                      "
+  },
+  "KEYBOARD": {
+    "message": "KEYBOARD"
+  },
+  "Show_Tooltip_When": {
+    "message": "แสดงข้อความ"
+  },
+  "Voice_When": {
+    "message": "Voice When"
+  },
+  "Translate_Writing_When": {
+    "message": "แปลการพิมพ์เมื่อ"
+  },
+  "Ignore_AltGr_Modifier": {
+    "message": "Ignore AltGr Modifier"
+  },
+  "Auto_Reader_When": {
+    "message": "Auto Reader When"
+  },
+  "Translate_Page_When": {
+    "message": "Translate Page When"
+  },
+  "OCR_When": {
+    "message": "OCR เมื่อใด"
+  },
+  "Mouseover_Text_Type_Swap_Key": {
+    "message": "คีย์สลับประเภทข้อความ Mouseover"
+  },
+  "Speech_Recognition_When": {
+    "message": "ภาษาการรู้จำเสียงพูด"
+  },
+  "Toggle_Mouseover_Text_Type_When": {
+    "message": "Toggle Mouseover Text Type When"
+  },
+  "Mouseover_Text_Type_Key_Hold": {
+    "message": "Mouseover Text Type Key Hold"
+  },
+  "Secondary_Language_When": {
+    "message": "Secondary Language When"
+  },
+  "Swap_Key_Toggle_Mode": {
+    "message": "Swap Key Toggle Mode"
+  },
+  "Toggle_Extension_When": {
+    "message": "Toggle Extension When"
+  },
+  "TTS_Pause_Resume_When": {
+    "message": "TTS Pause Resume When"
+  },
+  "GRAPHIC______________________________________": {
+    "message": "กราฟิก                                      "
+  },
+  "GRAPHIC": {
+    "message": "กราฟิก"
+  },
+  "Tooltip_Font_Size": {
+    "message": "ขนาดตัวอักษร Tooltip"
+  },
+  "Tooltip_Font_Family": {
+    "message": "Tooltip Font Family"
+  },
+  "Subtitle_Background": {
+    "message": "Subtitle Background"
+  },
+  "Tooltip_Width": {
+    "message": "ความกว้างของ Tooltip"
+  },
+  "Tooltip_Distance": {
+    "message": "ระยะห่างจากเมาส์"
+  },
+  "Tooltip_Animation": {
+    "message": "แอนิเมชั่น Tooltip"
+  },
+  "Tooltip_Disappear_Duration": {
+    "message": "Tooltip Disappear Duration"
+  },
+  "Tooltip_Position": {
+    "message": "ตำแหน่ง Tooltip"
+  },
+  "Tooltip_Placement": {
+    "message": "Tooltip Placement"
+  },
+  "Above": {
+    "message": "Above"
+  },
+  "Below": {
+    "message": "Below"
+  },
+  "Tooltip_Text_Align": {
+    "message": "จัดแนวข้อความ"
+  },
+  "Tooltip_Background_Blur": {
+    "message": "พื้นหลังเบลอ Tooltip"
+  },
+  "Mouseover_Highlight_Text": {
+    "message": "เน้นข้อความที่แปล"
+  },
+  "Tooltip_Font_Color": {
+    "message": "สีตัวอักษร Tooltip"
+  },
+  "Tooltip_Background_Color": {
+    "message": "สีพื้นหลัง Tooltip"
+  },
+  "Tooltip_Border_Color": {
+    "message": "สีขอบ Tooltip"
+  },
+  "Mouseover_Text_Highlight_Color": {
+    "message": "สีเน้นข้อความ"
+  },
+  "Ebook_Theme": {
+    "message": "Ebook Theme"
+  },
+  "Setting_Compact_mode": {
+    "message": "Setting Compact mode"
+  },
+  "VOICE______________________________________": {
+    "message": "เสียง                                      "
+  },
+  "VOICE": {
+    "message": "เสียง"
+  },
+  "Voice_Volume": {
+    "message": "ระดับเสียง"
+  },
+  "Voice_Speed": {
+    "message": "ความเร็วเสียง"
+  },
+  "Voice_Target": {
+    "message": "อ่านออกเสียงที่"
+  },
+  "Voice_Repeat": {
+    "message": "เล่นเสียงซ้ำ"
+  },
+  "Voice_for_": {
+    "message": "สำหรับเสียง "
+  },
+  "Voice_speed_for_": {
+    "message": "Voice speed for "
+  },
+  "EXCLUDE______________________________________": {
+    "message": "ยกเว้น                                      "
+  },
+  "EXCLUDE": {
+    "message": "ยกเว้น"
+  },
+  "Exclude_Language": {
+    "message": "ยกเว้นภาษา"
+  },
+  "Website_Filter_Mode": {
+    "message": "Website Filter Mode"
+  },
+  "Exclude_Website": {
+    "message": "ยกเว้นเว็บไซต์"
+  },
+  "Whitelist_Website": {
+    "message": "Whitelist Website"
+  },
+  "Website_Target_Language": {
+    "message": "Website Target Language"
+  },
+  "Block_Current_Site": {
+    "message": "Block Current Site"
+  },
+  "Allow_Current_Site": {
+    "message": "Allow Current Site"
+  },
+  "ADVANCED______________________________________": {
+    "message": "ขั้นสูง                                      "
+  },
+  "ADVANCED": {
+    "message": "ขั้นสูง"
+  },
+  "UI_Language": {
+    "message": "UI Language"
+  },
+  "Detect_PDF": {
+    "message": "ตรวจจับ PDF"
+  },
+  "Mouseover_Text_Type_2": {
+    "message": "Secondary Mouseover Text Type"
+  },
+  "Mouseover_Pause_Subtitle": {
+    "message": "หยุดคำบรรยายชั่วคราว Mouseover"
+  },
+  "Show_Tooltip_While_Typing": {
+    "message": "Show Tooltip While Typing"
+  },
+  "Tooltip_Info_Source_Text": {
+    "message": "ข้อความแหล่งที่มาข้อมูล Tooltip"
+  },
+  "Translate_Exclude_Regex": {
+    "message": "Translate Exclude Regex"
+  },
+  "Tooltip_Info_Source_Language": {
+    "message": "ภาษาแหล่งที่มา Tooltip"
+  },
+  "Tooltip_Info_Transliteration": {
+    "message": "การทับศัพท์ Tooltip"
+  },
+  "Tooltip_Interval_Time": {
+    "message": "ช่วงเวลา Tooltip"
+  },
+  "Tooltip_Show_Delay": {
+    "message": "Tooltip Show Delay"
+  },
+  "Tooltip_Word_Dictionary": {
+    "message": "คำอธิบายพจนานุกรมสั้นๆ เมื่อชี้เมาส์"
+  },
+  "Tooltip_Word_Dictionary_Source": {
+    "message": "Tooltip Word Dictionary Source"
+  },
+  "Fallback_Translator_Engine": {
+    "message": "Fallback Translator Engine"
+  },
+  "SPEECH": {
+    "message": "การพูด"
+  },
+  "Speech_Recognition_Language": {
+    "message": "ภาษาสำหรับการจดจำเสียงพูด"
+  },
+  "Voice_Panel_Translate_Language": {
+    "message": "แผงเสียงแปลภาษา"
+  },
+  "Voice_Panel_Text_Target": {
+    "message": "เป้าหมายข้อความแผงเสียง"
+  },
+  "Voice_Panel_Padding": {
+    "message": "การขยายแผงเสียง"
+  },
+  "Voice_Panel_Text_Align": {
+    "message": "จัดตำแหน่งข้อความแผงเสียง"
+  },
+  "Voice_Panel_Source_Font_Size": {
+    "message": "ขนาดแบบอักษรแหล่งที่มาของแผงเสียง"
+  },
+  "Voice_Panel_Target_Font_Size": {
+    "message": "ขนาดตัวอักษรเป้าหมายของแผงเสียง"
+  },
+  "Voice_Panel_Source_Font_Color": {
+    "message": "สีแบบอักษรแหล่งที่มาของแผงเสียง"
+  },
+  "Voice_Panel_Target_Font_Color": {
+    "message": "สีแบบอักษรเป้าหมายของแผงเสียง"
+  },
+  "Voice_Panel_Source_Border_Color": {
+    "message": "สีเส้นขอบแหล่งที่มาของแผงเสียง"
+  },
+  "Voice_Panel_Target_Border_Color": {
+    "message": "สีเส้นขอบเป้าหมายของแผงเสียง"
+  },
+  "Voice_Panel_Background_Color": {
+    "message": "สีพื้นหลังของแผงเสียง"
+  },
+  "BACKUP______________________________________": {
+    "message": "BACKUP                                      "
+  },
+  "BACKUP": {
+    "message": "BACKUP"
+  },
+  "Sync_Setting": {
+    "message": "Sync Setting"
+  },
+  "Import_Setting": {
+    "message": "Import Setting"
+  },
+  "Export_Setting": {
+    "message": "Export Setting"
+  },
+  "Reset_Setting": {
+    "message": "Reset Setting"
+  },
+  "About______________________________________": {
+    "message": "เกี่ยวกับ                                      "
+  },
+  "How_to_use": {
+    "message": "วิธีใช้"
+  },
+  "Check_how_to_use_this_extension": {
+    "message": "ดูวิธีการใช้ส่วนขยายนี้"
+  },
+  "PDF_Viewer": {
+    "message": "ตรวจสอบ PDF"
+  },
+  "Translate_local_PDF_file": {
+    "message": "แปลภาษา PDF ในเครื่อง"
+  },
+  "Ebook_Reader": {
+    "message": "E-book reader"
+  },
+  "Translate_local_ebook_file": {
+    "message": "Translate local ebook file"
+  },
+  "Twitter": {
+    "message": "ทวิตเตอร์"
+  },
+  "Retweet_twitter_post": {
+    "message": "รีทวีตโพสต์บนทวิตเตอร์"
+  },
+  "Review_Page": {
+    "message": "หน้ารีวิว"
+  },
+  "Comment_on_this_extension": {
+    "message": "แสดงความคิดเห็นเกี่ยวกับส่วนขยายนี้"
+  },
+  "Source_code": {
+    "message": "ซอร์สโค้ด"
+  },
+  "Check_source_code_in_github": {
+    "message": "ตรวจสอบซอร์สโค้ดใน GitHub"
+  },
+  "Privacy_Policy": {
+    "message": "นโยบายความเป็นส่วนตัว"
+  },
+  "User_privacy_policy": {
+    "message": "นโยบายความเป็นส่วนตัวของผู้ใช้"
+  },
+  "Voice_Panel": {
+    "message": "แผงเสียง"
+  },
+  "Translate_Voice": {
+    "message": "แปลเสียง"
+  },
+  "Review______________________________________": {
+    "message": "Review                                      "
+  },
+  "Review_this": {
+    "message": "Review this"
+  },
+  "Coffee______________________________________": {
+    "message": "Coffee                                      "
+  },
+  "Title______________________________________": {
+    "message": "Title                                      "
+  },
+  "SELECT_OPTION______________________________": {
+    "message": "SELECT OPTION                              "
+  },
+  "On": {
+    "message": "On"
+  },
+  "Off": {
+    "message": "Off"
+  },
+  "Auto": {
+    "message": "Auto"
+  },
+  "None": {
+    "message": "None"
+  },
+  "Select": {
+    "message": "Select"
+  },
+  "Mouseover": {
+    "message": "Mouseover"
+  },
+  "Mouseover_n_Select": {
+    "message": "Mouseover n Select"
+  },
+  "Follow": {
+    "message": "Follow"
+  },
+  "Fixed": {
+    "message": "Fixed"
+  },
+  "Top_Right": {
+    "message": "Top Right"
+  },
+  "Fade": {
+    "message": "Fade"
+  },
+  "Scale": {
+    "message": "Scale"
+  },
+  "Shift_away": {
+    "message": "Shift away"
+  },
+  "Shift_toward": {
+    "message": "Shift toward"
+  },
+  "Perspective": {
+    "message": "Perspective"
+  },
+  "Word": {
+    "message": "Word"
+  },
+  "Sentence": {
+    "message": "Sentence"
+  },
+  "Container": {
+    "message": "Container"
+  },
+  "Both": {
+    "message": "Both"
+  },
+  "Blacklist": {
+    "message": "Blacklist"
+  },
+  "Whitelist": {
+    "message": "Whitelist"
+  },
+  "Source": {
+    "message": "Source"
+  },
+  "Source_Text": {
+    "message": "Source Text"
+  },
+  "Translated_Text": {
+    "message": "Translated Text"
+  },
+  "Source_n_Translated": {
+    "message": "Source n Translated"
+  },
+  "Translated_n_Source": {
+    "message": "Translated n Source"
+  },
+  "Dual_Subtitle": {
+    "message": "Dual Subtitle"
+  },
+  "Target_Single_Subtitle": {
+    "message": "Target Single Subtitle"
+  },
+  "Source_Single_Subtitle": {
+    "message": "Source Single Subtitle"
+  },
+  "Always": {
+    "message": "Always"
+  },
+  "Center": {
+    "message": "Center"
+  },
+  "Left": {
+    "message": "Left"
+  },
+  "Right": {
+    "message": "Right"
+  },
+  "Justify": {
+    "message": "Justify"
+  },
+  "Light": {
+    "message": "Light"
+  },
+  "Dark": {
+    "message": "Dark"
+  },
+  "Default": {
+    "message": "Default"
+  },
+  "Ctrl_Left": {
+    "message": "Ctrl Left"
+  },
+  "Ctrl_Right": {
+    "message": "Ctrl Right"
+  },
+  "Alt_Left": {
+    "message": "Alt Left"
+  },
+  "Alt_Right": {
+    "message": "Alt Right"
+  },
+  "Shift_Left": {
+    "message": "Shift Left"
+  },
+  "Shift_Right": {
+    "message": "Shift Right"
+  },
+  "Meta_Left": {
+    "message": "Meta Left"
+  },
+  "Meta_Right": {
+    "message": "Meta Right"
+  },
+  "Click_Left": {
+    "message": "Click Left"
+  },
+  "Click_Middle": {
+    "message": "Click Middle"
+  },
+  "Click_Right": {
+    "message": "Click Right"
+  },
+  "google": {
+    "message": "google"
+  },
+  "bing": {
+    "message": "bing"
+  },
+  "Saved_Words": {
+    "message": "Saved Words"
+  },
+  "Group": {
+    "message": "Group"
+  },
+  "All": {
+    "message": "All"
+  },
+  "Move_to_group": {
+    "message": "Move to group"
+  },
+  "Delete": {
+    "message": "Delete"
+  },
+  "Clear": {
+    "message": "Clear"
+  },
+  "selected": {
+    "message": "selected"
+  },
+  "Date": {
+    "message": "Date"
+  },
+  "Translation": {
+    "message": "Translation"
+  },
+  "No_saved_words_yet": {
+    "message": "No saved words yet"
+  },
+  "Manage_Groups": {
+    "message": "Manage Groups"
+  },
+  "Remove_all": {
+    "message": "Remove all"
+  },
+  "Import_CSV": {
+    "message": "Import CSV"
+  },
+  "Download_CSV": {
+    "message": "Download CSV"
+  },
+  "Save_key": {
+    "message": "Save key"
+  },
+  "Highlight_on_page": {
+    "message": "Highlight on page"
+  },
+  "Right_click_menu": {
+    "message": "Right click menu"
+  },
+  "Add_right_click_context_menu": {
+    "message": "Add right click context menu"
+  },
+  "Done": {
+    "message": "Done"
+  },
+  "On_Select": {
+    "message": "On Select"
+  },
+  "On_Hover": {
+    "message": "On Hover"
+  },
+  "On_Select_n_Hover": {
+    "message": "On Select n Hover"
+  },
+  "Select_group_to_play": {
+    "message": "Select group to play"
+  },
+  "No_Group_Selected": {
+    "message": "No Group Selected"
+  },
+  "Check_groups_to_play": {
+    "message": "Check groups to play"
+  },
+  "Flashcard_makes_cards_from_your_saved_words": {
+    "message": "Flashcard makes cards from your saved words"
+  },
+  "Flashcard": {
+    "message": "Flashcard"
+  },
+  "Play_Flashcard": {
+    "message": "Play Flashcard"
+  },
+  "Reset_progress": {
+    "message": "Reset progress"
+  },
+  "No_History_Data": {
+    "message": "No History Data"
+  },
+  "Today_play_is_completed": {
+    "message": "Today play is completed"
+  },
+  "Try_on_next_day": {
+    "message": "Try on next day"
+  },
+  "No_more_card_to_learn_today": {
+    "message": "No more card to learn today"
+  },
+  "Add_more_history_data_to_play_with": {
+    "message": "Add more history data to play with"
+  },
+  "Finish": {
+    "message": "Finish"
+  },
+  "Today_Flashcards_are_Completed": {
+    "message": "Today Flashcards are Completed"
+  },
+  "No_More_Card_Data": {
+    "message": "No More Card Data"
+  },
+  "Show_Answer": {
+    "message": "Show Answer"
+  },
+  "Again": {
+    "message": "Again"
+  },
+  "Hard": {
+    "message": "Hard"
+  },
+  "Good": {
+    "message": "Good"
+  },
+  "Easy": {
+    "message": "Easy"
+  },
+  "New": {
+    "message": "New"
+  },
+  "Review": {
+    "message": "Review"
+  },
+  "Learning": {
+    "message": "Learning"
+  },
+  "About": {
+    "message": "About"
+  },
+  "Translator": {
+    "message": "Translator"
+  },
+  "Wiktionary": {
+    "message": "Wiktionary"
+  },
+  "Translated": {
+    "message": "Translated"
+  },
+  "Custom": {
+    "message": "Custom"
+  },
+  "appName": {
+    "message": "Trans No Name"
+  },
+  "appDesc": {
+    "message": "น้องเมาส์นักแปลภาษา Trans No Name แปลข้อความ Mouse Over โดยใช้ Google Translate รองรับ OCR, TTS, โปรแกรมแปลมังงะ และโปร"
+  }
+}

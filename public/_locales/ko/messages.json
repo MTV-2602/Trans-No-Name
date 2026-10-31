@@ -1,0 +1,698 @@
+{
+  "MAIN______________________________________": {
+    "message": "메인                                      "
+  },
+  "MAIN": {
+    "message": "메인"
+  },
+  "Mouse_Tooltip_Translator": {
+    "message": "Trans No Name"
+  },
+  "Translate_When": {
+    "message": "번역 표시:"
+  },
+  "Translate_From": {
+    "message": "다음에서 번역:"
+  },
+  "Translate_Into": {
+    "message": "다음으로 번역:"
+  },
+  "Translator_Engine": {
+    "message": "번역 엔진"
+  },
+  "LLM_Provider": {
+    "message": "LLM Provider"
+  },
+  "LLM_Api_Endpoint": {
+    "message": "LLM API Endpoint URL"
+  },
+  "LLM_Api_Key": {
+    "message": "LLM API Key"
+  },
+  "LLM_Model": {
+    "message": "LLM Model"
+  },
+  "Mouseover_Text_Type": {
+    "message": "마우스오버 텍스트 타입"
+  },
+  "Translate_Into_2": {
+    "message": "Secondary Translate Into"
+  },
+  "Writing_Language": {
+    "message": "쓰기 언어"
+  },
+  "Reverse_Translate_Language": {
+    "message": "Reverse Translate Language"
+  },
+  "OCR_Language": {
+    "message": "OCR 언어"
+  },
+  "Detect_Subtitle": {
+    "message": "Detect Subtitle"
+  },
+  "KEYBOARD______________________________________": {
+    "message": "KEYBOARD                                      "
+  },
+  "KEYBOARD": {
+    "message": "KEYBOARD"
+  },
+  "Show_Tooltip_When": {
+    "message": "툴팁 표시:"
+  },
+  "Voice_When": {
+    "message": "음성 표시:"
+  },
+  "Translate_Writing_When": {
+    "message": "Translate Writing When"
+  },
+  "Ignore_AltGr_Modifier": {
+    "message": "Ignore AltGr Modifier"
+  },
+  "Auto_Reader_When": {
+    "message": "Auto Reader When"
+  },
+  "Translate_Page_When": {
+    "message": "Translate Page When"
+  },
+  "OCR_When": {
+    "message": "OCR When"
+  },
+  "Mouseover_Text_Type_Swap_Key": {
+    "message": "Mouseover Text Type Swap Key"
+  },
+  "Speech_Recognition_When": {
+    "message": "음성 인지 시기"
+  },
+  "Toggle_Mouseover_Text_Type_When": {
+    "message": "Toggle Mouseover Text Type When"
+  },
+  "Mouseover_Text_Type_Key_Hold": {
+    "message": "Mouseover Text Type Key Hold"
+  },
+  "Secondary_Language_When": {
+    "message": "Secondary Language When"
+  },
+  "Swap_Key_Toggle_Mode": {
+    "message": "Swap Key Toggle Mode"
+  },
+  "Toggle_Extension_When": {
+    "message": "Toggle Extension When"
+  },
+  "TTS_Pause_Resume_When": {
+    "message": "TTS Pause Resume When"
+  },
+  "GRAPHIC______________________________________": {
+    "message": "GRAPHIC                                      "
+  },
+  "GRAPHIC": {
+    "message": "GRAPHIC"
+  },
+  "Tooltip_Font_Size": {
+    "message": "툴팁 폰트 크기"
+  },
+  "Tooltip_Font_Family": {
+    "message": "Tooltip Font Family"
+  },
+  "Subtitle_Background": {
+    "message": "Subtitle Background"
+  },
+  "Tooltip_Width": {
+    "message": "툴팁 너비"
+  },
+  "Tooltip_Distance": {
+    "message": "툴팁 거리"
+  },
+  "Tooltip_Animation": {
+    "message": "툴팁 애니메이션"
+  },
+  "Tooltip_Disappear_Duration": {
+    "message": "Tooltip Disappear Duration"
+  },
+  "Tooltip_Position": {
+    "message": "툴팁 위치"
+  },
+  "Tooltip_Placement": {
+    "message": "Tooltip Placement"
+  },
+  "Above": {
+    "message": "Above"
+  },
+  "Below": {
+    "message": "Below"
+  },
+  "Tooltip_Text_Align": {
+    "message": "툴팁 텍스트 정렬"
+  },
+  "Tooltip_Background_Blur": {
+    "message": "툴팁 배경 Blur"
+  },
+  "Mouseover_Highlight_Text": {
+    "message": "Mouseover Highlight Text"
+  },
+  "Tooltip_Font_Color": {
+    "message": "툴팁 폰트 색상"
+  },
+  "Tooltip_Background_Color": {
+    "message": "툴팁 배경 색상"
+  },
+  "Tooltip_Border_Color": {
+    "message": "툴팁 테두리 색상"
+  },
+  "Mouseover_Text_Highlight_Color": {
+    "message": "마우스오버 텍스트 하이라이트 색상"
+  },
+  "Ebook_Theme": {
+    "message": "Ebook Theme"
+  },
+  "Setting_Compact_mode": {
+    "message": "Setting Compact mode"
+  },
+  "VOICE______________________________________": {
+    "message": "VOICE                                      "
+  },
+  "VOICE": {
+    "message": "VOICE"
+  },
+  "Voice_Volume": {
+    "message": "Voice 볼륨"
+  },
+  "Voice_Speed": {
+    "message": "Voice 속도"
+  },
+  "Voice_Target": {
+    "message": "Voice Target"
+  },
+  "Voice_Repeat": {
+    "message": "Voice 반복"
+  },
+  "Voice_for_": {
+    "message": "Voice for "
+  },
+  "Voice_speed_for_": {
+    "message": "Voice speed for "
+  },
+  "EXCLUDE______________________________________": {
+    "message": "EXCLUDE                                      "
+  },
+  "EXCLUDE": {
+    "message": "EXCLUDE"
+  },
+  "Exclude_Language": {
+    "message": "제외할 언어"
+  },
+  "Website_Filter_Mode": {
+    "message": "Website Filter Mode"
+  },
+  "Exclude_Website": {
+    "message": "Exclude Website"
+  },
+  "Whitelist_Website": {
+    "message": "Whitelist Website"
+  },
+  "Website_Target_Language": {
+    "message": "Website Target Language"
+  },
+  "Block_Current_Site": {
+    "message": "Block Current Site"
+  },
+  "Allow_Current_Site": {
+    "message": "Allow Current Site"
+  },
+  "ADVANCED______________________________________": {
+    "message": "ADVANCED                                      "
+  },
+  "ADVANCED": {
+    "message": "ADVANCED"
+  },
+  "UI_Language": {
+    "message": "UI Language"
+  },
+  "Detect_PDF": {
+    "message": "Detect PDF"
+  },
+  "Mouseover_Text_Type_2": {
+    "message": "Secondary Mouseover Text Type"
+  },
+  "Mouseover_Pause_Subtitle": {
+    "message": "Mouseover Pause Subtitle"
+  },
+  "Show_Tooltip_While_Typing": {
+    "message": "Show Tooltip While Typing"
+  },
+  "Tooltip_Info_Source_Text": {
+    "message": "Tooltip Info Source Text"
+  },
+  "Translate_Exclude_Regex": {
+    "message": "Translate Exclude Regex"
+  },
+  "Tooltip_Info_Source_Language": {
+    "message": "Tooltip Info Source Language"
+  },
+  "Tooltip_Info_Transliteration": {
+    "message": "Tooltip Info Transliteration"
+  },
+  "Tooltip_Interval_Time": {
+    "message": "Tooltip Interval Time"
+  },
+  "Tooltip_Show_Delay": {
+    "message": "Tooltip Show Delay"
+  },
+  "Tooltip_Word_Dictionary": {
+    "message": "툴팁 단어 사전"
+  },
+  "Tooltip_Word_Dictionary_Source": {
+    "message": "Tooltip Word Dictionary Source"
+  },
+  "Fallback_Translator_Engine": {
+    "message": "Fallback Translator Engine"
+  },
+  "SPEECH": {
+    "message": "음성 알림"
+  },
+  "Speech_Recognition_Language": {
+    "message": "음성 인지 언어"
+  },
+  "Voice_Panel_Translate_Language": {
+    "message": "음성 패널 번역 언어"
+  },
+  "Voice_Panel_Text_Target": {
+    "message": "음성 패널 도착어 텍스트"
+  },
+  "Voice_Panel_Padding": {
+    "message": "음성 패널 여백"
+  },
+  "Voice_Panel_Text_Align": {
+    "message": "음성 패널 텍스트 정렬"
+  },
+  "Voice_Panel_Source_Font_Size": {
+    "message": "음성 패널 출발어 글꼴 크기"
+  },
+  "Voice_Panel_Target_Font_Size": {
+    "message": "음성 패널 도착어 글꼴 크기"
+  },
+  "Voice_Panel_Source_Font_Color": {
+    "message": "음성 패널 출발어 글꼴 크기"
+  },
+  "Voice_Panel_Target_Font_Color": {
+    "message": "음성 패널 도착어 글꼴색"
+  },
+  "Voice_Panel_Source_Border_Color": {
+    "message": "음성 패널 출발어 가장자리 색"
+  },
+  "Voice_Panel_Target_Border_Color": {
+    "message": "음성 패널 도착어 가장자리 색"
+  },
+  "Voice_Panel_Background_Color": {
+    "message": "음성 패널 출발어 배경색"
+  },
+  "BACKUP______________________________________": {
+    "message": "BACKUP                                      "
+  },
+  "BACKUP": {
+    "message": "BACKUP"
+  },
+  "Sync_Setting": {
+    "message": "Sync Setting"
+  },
+  "Import_Setting": {
+    "message": "Import Setting"
+  },
+  "Export_Setting": {
+    "message": "Export Setting"
+  },
+  "Reset_Setting": {
+    "message": "Reset Setting"
+  },
+  "About______________________________________": {
+    "message": "About                                      "
+  },
+  "How_to_use": {
+    "message": "How to use"
+  },
+  "Check_how_to_use_this_extension": {
+    "message": "이 확장 프로그램 사용 방법 확인"
+  },
+  "PDF_Viewer": {
+    "message": "PDF 뷰어"
+  },
+  "Translate_local_PDF_file": {
+    "message": "로컬 PDF 파일 번역"
+  },
+  "Ebook_Reader": {
+    "message": "Ebook 리더"
+  },
+  "Translate_local_ebook_file": {
+    "message": "로컬 ebook 파일 번역"
+  },
+  "Twitter": {
+    "message": "Twitter"
+  },
+  "Retweet_twitter_post": {
+    "message": "Retweet twitter post"
+  },
+  "Review_Page": {
+    "message": "Review Page"
+  },
+  "Comment_on_this_extension": {
+    "message": "Comment on this extension"
+  },
+  "Source_code": {
+    "message": "Source code"
+  },
+  "Check_source_code_in_github": {
+    "message": "Check source code in github"
+  },
+  "Privacy_Policy": {
+    "message": "Privacy Policy"
+  },
+  "User_privacy_policy": {
+    "message": "User privacy policy"
+  },
+  "Voice_Panel": {
+    "message": "음성 패널"
+  },
+  "Translate_Voice": {
+    "message": "음성 번역"
+  },
+  "Review______________________________________": {
+    "message": "Review                                      "
+  },
+  "Review_this": {
+    "message": "Review this"
+  },
+  "Coffee______________________________________": {
+    "message": "커피                                      "
+  },
+  "Title______________________________________": {
+    "message": "Title                                      "
+  },
+  "SELECT_OPTION______________________________": {
+    "message": "SELECT OPTION                              "
+  },
+  "On": {
+    "message": "On"
+  },
+  "Off": {
+    "message": "Off"
+  },
+  "Auto": {
+    "message": "Auto"
+  },
+  "None": {
+    "message": "None"
+  },
+  "Select": {
+    "message": "Select"
+  },
+  "Mouseover": {
+    "message": "Mouseover"
+  },
+  "Mouseover_n_Select": {
+    "message": "Mouseover n Select"
+  },
+  "Follow": {
+    "message": "Follow"
+  },
+  "Fixed": {
+    "message": "Fixed"
+  },
+  "Top_Right": {
+    "message": "Top Right"
+  },
+  "Fade": {
+    "message": "Fade"
+  },
+  "Scale": {
+    "message": "Scale"
+  },
+  "Shift_away": {
+    "message": "Shift away"
+  },
+  "Shift_toward": {
+    "message": "Shift toward"
+  },
+  "Perspective": {
+    "message": "Perspective"
+  },
+  "Word": {
+    "message": "Word"
+  },
+  "Sentence": {
+    "message": "Sentence"
+  },
+  "Container": {
+    "message": "Container"
+  },
+  "Both": {
+    "message": "Both"
+  },
+  "Blacklist": {
+    "message": "Blacklist"
+  },
+  "Whitelist": {
+    "message": "Whitelist"
+  },
+  "Source": {
+    "message": "Source"
+  },
+  "Source_Text": {
+    "message": "Source Text"
+  },
+  "Translated_Text": {
+    "message": "Translated Text"
+  },
+  "Source_n_Translated": {
+    "message": "Source n Translated"
+  },
+  "Translated_n_Source": {
+    "message": "Translated n Source"
+  },
+  "Dual_Subtitle": {
+    "message": "Dual Subtitle"
+  },
+  "Target_Single_Subtitle": {
+    "message": "Target Single Subtitle"
+  },
+  "Source_Single_Subtitle": {
+    "message": "Source Single Subtitle"
+  },
+  "Always": {
+    "message": "Always"
+  },
+  "Center": {
+    "message": "Center"
+  },
+  "Left": {
+    "message": "Left"
+  },
+  "Right": {
+    "message": "Right"
+  },
+  "Justify": {
+    "message": "Justify"
+  },
+  "Light": {
+    "message": "Light"
+  },
+  "Dark": {
+    "message": "Dark"
+  },
+  "Default": {
+    "message": "Default"
+  },
+  "Ctrl_Left": {
+    "message": "Ctrl Left"
+  },
+  "Ctrl_Right": {
+    "message": "Ctrl Right"
+  },
+  "Alt_Left": {
+    "message": "Alt Left"
+  },
+  "Alt_Right": {
+    "message": "Alt Right"
+  },
+  "Shift_Left": {
+    "message": "Shift Left"
+  },
+  "Shift_Right": {
+    "message": "Shift Right"
+  },
+  "Meta_Left": {
+    "message": "Meta Left"
+  },
+  "Meta_Right": {
+    "message": "Meta Right"
+  },
+  "Click_Left": {
+    "message": "Click Left"
+  },
+  "Click_Middle": {
+    "message": "Click Middle"
+  },
+  "Click_Right": {
+    "message": "Click Right"
+  },
+  "google": {
+    "message": "google"
+  },
+  "bing": {
+    "message": "bing"
+  },
+  "Saved_Words": {
+    "message": "Saved Words"
+  },
+  "Group": {
+    "message": "Group"
+  },
+  "All": {
+    "message": "All"
+  },
+  "Move_to_group": {
+    "message": "Move to group"
+  },
+  "Delete": {
+    "message": "Delete"
+  },
+  "Clear": {
+    "message": "Clear"
+  },
+  "selected": {
+    "message": "selected"
+  },
+  "Date": {
+    "message": "Date"
+  },
+  "Translation": {
+    "message": "Translation"
+  },
+  "No_saved_words_yet": {
+    "message": "No saved words yet"
+  },
+  "Manage_Groups": {
+    "message": "Manage Groups"
+  },
+  "Remove_all": {
+    "message": "Remove all"
+  },
+  "Import_CSV": {
+    "message": "Import CSV"
+  },
+  "Download_CSV": {
+    "message": "Download CSV"
+  },
+  "Save_key": {
+    "message": "Save key"
+  },
+  "Highlight_on_page": {
+    "message": "Highlight on page"
+  },
+  "Right_click_menu": {
+    "message": "Right click menu"
+  },
+  "Add_right_click_context_menu": {
+    "message": "Add right click context menu"
+  },
+  "Done": {
+    "message": "Done"
+  },
+  "On_Select": {
+    "message": "On Select"
+  },
+  "On_Hover": {
+    "message": "On Hover"
+  },
+  "On_Select_n_Hover": {
+    "message": "On Select n Hover"
+  },
+  "Select_group_to_play": {
+    "message": "Select group to play"
+  },
+  "No_Group_Selected": {
+    "message": "No Group Selected"
+  },
+  "Check_groups_to_play": {
+    "message": "Check groups to play"
+  },
+  "Flashcard_makes_cards_from_your_saved_words": {
+    "message": "Flashcard makes cards from your saved words"
+  },
+  "Flashcard": {
+    "message": "Flashcard"
+  },
+  "Play_Flashcard": {
+    "message": "Play Flashcard"
+  },
+  "Reset_progress": {
+    "message": "Reset progress"
+  },
+  "No_History_Data": {
+    "message": "No History Data"
+  },
+  "Today_play_is_completed": {
+    "message": "Today play is completed"
+  },
+  "Try_on_next_day": {
+    "message": "Try on next day"
+  },
+  "No_more_card_to_learn_today": {
+    "message": "No more card to learn today"
+  },
+  "Add_more_history_data_to_play_with": {
+    "message": "Add more history data to play with"
+  },
+  "Finish": {
+    "message": "Finish"
+  },
+  "Today_Flashcards_are_Completed": {
+    "message": "Today Flashcards are Completed"
+  },
+  "No_More_Card_Data": {
+    "message": "No More Card Data"
+  },
+  "Show_Answer": {
+    "message": "Show Answer"
+  },
+  "Again": {
+    "message": "Again"
+  },
+  "Hard": {
+    "message": "Hard"
+  },
+  "Good": {
+    "message": "Good"
+  },
+  "Easy": {
+    "message": "Easy"
+  },
+  "New": {
+    "message": "New"
+  },
+  "Review": {
+    "message": "Review"
+  },
+  "Learning": {
+    "message": "Learning"
+  },
+  "About": {
+    "message": "About"
+  },
+  "Translator": {
+    "message": "Translator"
+  },
+  "Wiktionary": {
+    "message": "Wiktionary"
+  },
+  "Translated": {
+    "message": "Translated"
+  },
+  "Custom": {
+    "message": "Custom"
+  },
+  "appName": {
+    "message": "Trans No Name"
+  },
+  "appDesc": {
+    "message": "마우스 툴팁 번역기 Google 번역을 사용하여 마우스 오버 텍스트를 번역합니다. Support OCR, TTS, manga translator & pdf translator."
+  }
+}

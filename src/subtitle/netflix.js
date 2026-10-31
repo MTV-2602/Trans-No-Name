@@ -1,0 +1,485 @@
+import BaseVideo from "./baseVideo";
+import { isSameLanguage, isLangExcluded } from "/src/util/lang.js";
+
+
+// https://github.com/mikesteele/dual-captions/blob/b0ab92e4670100a27b76b2796995ad1be89f1672/site_integrations/netflix/index.js
+// https://stackoverflow.com/questions/42105028/netflix-video-player-in-chrome-how-to-seek
+
+export default class Netflix extends BaseVideo {
+  static sitePattern = /^(https:\/\/)(www\.netflix\.com)/;
+  static captionRequestPattern = /^(https:\/\/).*(nflxvideo\.net)\/\?o=1/;
+  static baseUrl = "https://www.netflix.com";
+
+  static playerSelector = "";
+  static playerApiSelector = "";
+  static captionContainerSelector = "";
+  static captionWindowSelector = "";
+  static captionBoxSelector = "";
+  static sub = {};
+  static subtitleLangDict = {
+    "zh-CN": "zh-Hans",
+    "zh-TW": "zh-Hant",
+  };
+  
+
+  static #injectScriptConstructor = (() => {
+    this.listenMessageFrameFromInject();
+  })();
+  static async listenPlayer() {}
+  static async handleUrlChange(url = window.location.href) {
+    this.pausedByExtension = false;
+    this.callMethodFromInject("activateCaption", url);
+  }
+  static async activateCaption(url) {
+    // skip if user caption off, is shorts skip
+    if (!this.isVideoUrl(url)) {
+      return;
+    }
+    await this.waitPlayerReady(); //wait player load
+    // get video lang
+
+    this.killInterceptDebounce(); // end caption intercept
+    await this.interceptCaption(); // start caption intercept
+    await this.wait(3000); //wait for 3s
+    await this.waitUntil(() => this.getVideoId());
+    var lang = await this.getPreferredSourceLang();
+    if (this.checkPlayerCaptionOff()) {
+      console.log("caption is off");
+    } else {
+      var videoId = this.getVideoId();
+      this.requestTrack(lang, videoId); //turn on caption on specified lang
+    }
+  }
+  static async isVideoUrl(url) {
+    return url.includes(`${this.baseUrl}/watch`);
+  }
+  static async waitPlayerReady() {
+    await this.waitUntil(() => this.getPlayer());
+    var player = this.getPlayer();
+    await this.waitUntil(() => player.getAudioTrack());
+  }
+  static setPlayerCaption(lang) {
+    this.getPlayer().setTimedTextTrack(lang);
+  }
+
+  static getOffTrack() {
+    var trackList = this.getPlayer()?.getTimedTextTrackList();
+    var offTrack =
+      trackList?.find((track) => track.trackId.includes("NONE")) ||
+      trackList?.find((track) => track.trackId.includes("1;1;0;")) ||
+      trackList?.[0];
+    return offTrack;
+  }
+  static setPlayerCaptionOff() {
+    this.getPlayer().setTimedTextTrack(this.getOffTrack());
+  }
+  static checkPlayerCaptionOff() {
+    var currentTrack = this.getPlayer().getTextTrack();
+    var offTrack = this.getOffTrack();
+    return !currentTrack || currentTrack.trackId === offTrack?.trackId;
+  }
+
+  static getPlayer() {
+    var videoPlayer =
+      window?.netflix?.appContext?.state?.playerApp?.getAPI().videoPlayer;
+    var playerSessionIds = videoPlayer?.getAllPlayerSessionIds();
+
+    var selectedPlayerSessionId =
+      playerSessionIds?.find((s) => s.includes("watch")) ||
+      playerSessionIds?.find((s) => s.includes("preview")) ||
+      playerSessionIds?.[0];
+
+    var player = videoPlayer?.getVideoPlayerBySessionId(
+      selectedPlayerSessionId
+    );
+    return player;
+  }
+  static getVideoId() {
+    return String(this.getPlayer()?.getMovieId());
+  }
+  static extractVideoId(url) {
+    const match = url.match(/\/watch\/(\d+)/);
+    return match ? match[1] : null;
+  }
+
+  static async interceptCaption() {
+    if (this.interceptorLoaded) {
+      return;
+    }
+    this.interceptorLoaded = true;
+    this.interceptor.apply();
+    this.interceptor.on("request", async ({ request, requestId }) => {
+      if (!this.captionRequestPattern.test(request.url)) {
+        return;
+      }
+      // xml is kept outside the try so a failure in the translated track still
+      // answers the player with the original subtitle instead of hanging it
+      var xml = null;
+      try {
+        //get source lang sub
+        var response = await this.requestSubtitle(request.url);
+        var sourceLang = this.getCurrentSubtitleLang();
+        var targetLang = this.getPreferredTargetLang();
+        var videoId = this.getVideoId();
+        xml = await response.text();
+        var sub1 = this.parseSubtitle(xml, videoId);
+        // 단일 자막은 원본 xml 그대로 반환 → ruby/br/nested span 구조 100% 보존
+        var xmlRes = xml;
+
+        if (
+          !isSameLanguage(sourceLang, targetLang) &&
+          this.setting["detectSubtitle"] == "dualsub" &&
+          !isLangExcluded(this.setting["langExcludeList"], sourceLang)
+        ) {
+          var mergedXml = await this.withDeadline(
+            (async () => {
+              var sub2 = await this.requestSubtitleWithReset(targetLang);
+              var mergedSub = this.mergeSubtitles(sub1, sub2);
+              return mergedSub ? this.encodeMergedSubtitles(mergedSub) : null;
+            })(),
+            this.dualSubDeadline
+          );
+          if (mergedXml) {
+            xmlRes = mergedXml;
+          }
+        }
+        request.respondWith(new Response(xmlRes));
+      } catch (error) {
+        console.log(error);
+        if (xml) {
+          try {
+            request.respondWith(new Response(xml));
+          } catch (respondError) {
+            console.log(respondError);
+          }
+        }
+      }
+    });
+  }
+
+
+  
+  static async guessSubtitleLang(url, subtitle) {
+    return this.getPlayer()?.getTimedTextTrack()?.bcp47;
+  }
+  static async guessVideoLang() {
+    return this.getPlayer()?.getAudioTrack()?.bcp47;  
+  }
+  static getCurrentSubtitle(){
+    return this.getPlayer()?.getTimedTextTrack() 
+  }
+  static getCurrentSubtitleLang() {
+    return this.getCurrentSubtitle()?.bcp47;
+  }
+  static getTrackList(){
+    return this.getPlayer()?.getTimedTextTrackList() || [];
+  }
+
+
+  static async requestSubtitle(subUrl, lang, tlang, videoId) {
+    // rawFetch = native fetch (bypasses our interceptor). subUrl matches this
+    // site's captionRequestPattern, so a plain fetch here would be re-intercepted
+    // and recurse now that fetch is intercepted alongside XHR.
+    var res = await this.rawFetch(subUrl);
+    return res;
+  }
+  static async setTextTrack(sub) {
+    if (!sub) {
+      return;
+    }
+    this.getPlayer()?.setTextTrack(sub);
+  }
+
+  static async requestSubtitleWithReset(lang, videoId) {
+    var prevSub = this.getCurrentSubtitle();
+    try {
+      return await this.requestTrack(lang, videoId);
+    } finally {
+      // restore in finally: this used to be skipped whenever requestTrack threw
+      // or timed out, which left the viewer watching the translated track
+      this.setTextTrack(prevSub);
+    }
+  }
+
+  static async requestTrack(lang, videoId) {
+    var videoId = videoId || this.getVideoId();
+    console.log(videoId)
+    if (this.sub?.[videoId]?.[lang]) {
+      return this.sub?.[videoId]?.[lang];
+    }
+    var subList = this.getTrackList();
+    var offTrack = this.getOffTrack();
+    const selectedTimedTextTrack = subList
+      ?.sort((a, b) => (a.trackType === "ASSISTIVE" ? -1 : 1))
+      ?.filter((textTrack) => textTrack.isImageBased === false)
+      ?.filter((textTrack) => textTrack.trackId !== offTrack?.trackId)
+      ?.find(
+        (textTrack) =>
+          textTrack.bcp47 === lang || textTrack.bcp47.includes(lang)
+      );
+    if (!selectedTimedTextTrack) {
+      return null;
+    }
+    this.setTextTrack(selectedTimedTextTrack);
+    try {
+      await this.waitUntil(() => {
+        return this.sub?.[videoId]?.[lang];
+      }, 2500);
+    } catch (error) {
+      // now that waitUntil honours its timeout it throws instead of hanging
+      console.log(error);
+    }
+    return this.sub?.[videoId]?.[lang];
+  }
+  // textContent of a TTML <p>, but with <br/> turned into a space so a caption
+  // that wraps across a <br> isn't glued into one word (e.g. "word<br/>next" ->
+  // "word next", not "wordnext"). Runs on a throwaway clone so the original node
+  // kept for display (originalP, <br> intact) is untouched. Display uses
+  // originalP; this text is the fallback / bookkeeping copy.
+  static getTextWithBr(node) {
+    var clone = node.cloneNode(true);
+    var brs = Array.from(clone.getElementsByTagName("br"));
+    for (var br of brs) {
+      br.parentNode?.replaceChild(clone.ownerDocument.createTextNode(" "), br);
+    }
+    return clone.textContent;
+  }
+  static parseSubtitle(sub, videoId) {
+    const concatSubtitles = [];
+    const parser = new DOMParser();
+    const xmlDoc = parser.parseFromString(sub, "text/xml");
+
+    // 원본 p 구조 보존 위해 deep clone (ruby/br/nested span 모두 살림)
+    const clonedPs = Array.from(xmlDoc.getElementsByTagName("p")).map((p) =>
+      p.cloneNode(true)
+    );
+    var lang = this.getCurrentSubtitleLang();
+
+    // clone 안의 region/style 참조도 lang suffix로 갱신해서 renamed ID와 매치
+    const suffixRef = (el, attr) => {
+      if (el.hasAttribute(attr)) {
+        el.setAttribute(attr, el.getAttribute(attr) + "_" + lang);
+      }
+    };
+    clonedPs.forEach((p) => {
+      suffixRef(p, "region");
+      suffixRef(p, "style");
+      Array.from(p.getElementsByTagName("span")).forEach((s) => {
+        suffixRef(s, "style");
+        suffixRef(s, "region");
+      });
+    });
+
+    // remove div tag
+    const div = xmlDoc.querySelector("div");
+    div?.parentNode?.removeChild(div);
+
+    // Extract all regions and update their IDs to add lang suffix
+    const layout = xmlDoc.getElementsByTagName("layout")[0];
+    let regions = [];
+    if (layout) {
+      regions = Array.from(layout.getElementsByTagName("region"));
+      regions.forEach((region, index) => {
+        const newId = `region${index}_${lang}`;
+        region.setAttribute("xml:id", newId);
+      });
+    }
+
+    const styling = xmlDoc.getElementsByTagName("styling")[0];
+    let styles = [];
+    if (styling) {
+      styles = Array.from(styling.getElementsByTagName("style"));
+      styles.forEach((style) => {
+        const newId = `${style.getAttribute("xml:id")}_${lang}`;
+        style.setAttribute("xml:id", newId);
+      });
+    }
+
+    // parse subtitles
+    for (let i = 0; i < clonedPs.length; i++) {
+      const subtitle = clonedPs[i];
+      const start = parseInt(subtitle.getAttribute("begin").replace("t", ""));
+      const end = parseInt(subtitle.getAttribute("end").replace("t", ""));
+      const text = this.getTextWithBr(subtitle);
+      // suffixRef로 이미 lang 붙어있어 그대로 읽음
+      const region = subtitle.getAttribute("region");
+      // p의 style 우선, 없으면 첫 span style fallback
+      const style =
+        subtitle.getAttribute("style") ||
+        subtitle.getElementsByTagName("span")[0]?.getAttribute("style") ||
+        "";
+      var prev = concatSubtitles?.[concatSubtitles.length - 1];
+      if (prev && prev.start === start && prev.end === end) {
+        // 같은 시간대 p 병합: text + 자식 둘 다 이어붙임
+        prev.text += " " + text;
+        prev.originalP.appendChild(xmlDoc.createTextNode(" "));
+        Array.from(subtitle.childNodes).forEach((child) => {
+          prev.originalP.appendChild(child.cloneNode(true));
+        });
+      } else {
+        concatSubtitles.push({
+          start,
+          end,
+          text,
+          region,
+          style,
+          originalP: subtitle,
+        });
+      }
+    }
+
+    var parsedSubMeta = {
+      xmlDoc,
+      lang,
+      subtitles: concatSubtitles,
+      regions,
+      styles,
+    };
+    if (!this.sub[videoId]) {
+      this.sub[videoId] = {};
+    }
+    this.sub[videoId][lang] = parsedSubMeta;
+    return parsedSubMeta;
+  }
+
+  static mergeSubtitles(sub1Meta, sub2Meta) {
+    if (!sub1Meta || !sub2Meta) {
+      return null;
+    } else if (!sub1Meta) {
+      return sub2Meta;
+    } else if (!sub2Meta) {
+      return sub1Meta;
+    }
+
+    var mergedSub = [];
+    var sub1 = sub1Meta.subtitles;
+    var sub2 = sub2Meta.subtitles;
+    var mergedSubMeta = { ...sub1Meta };
+
+    const targetDoc = mergedSubMeta?.xmlDoc;
+    const layout = targetDoc?.getElementsByTagName("layout")?.[0];
+
+    // importNode로 sub2 region을 sub1 xmlDoc에 복제해서 추가
+    // (원본 appendChild는 cross-doc 노드를 옮겨버려서 캐시된 sub2의 layout이 비어버림)
+    sub2Meta?.regions?.forEach((region) => {
+      if (layout && region) {
+        layout.appendChild(targetDoc.importNode(region, true));
+      }
+    });
+
+    // Merge styles from sub2 into sub1 (importNode로 동일하게)
+    const styling = targetDoc?.getElementsByTagName("styling")?.[0];
+    sub2Meta?.styles?.forEach((style) => {
+      if (styling && style) {
+        styling.appendChild(targetDoc.importNode(style, true));
+      }
+    });
+
+    // 가로/세로 섞이면 가로 region을 base로 합치기 위한 helper
+    const isRegionVertical = (xmlDoc, regionId) => {
+      if (!xmlDoc || !regionId) return false;
+      const region = Array.from(xmlDoc.getElementsByTagName("region")).find(
+        (r) => r.getAttribute("xml:id") === regionId
+      );
+      if (!region) return false;
+      const wmAttr = Array.from(region.attributes).find(
+        (a) => a.localName === "writingMode" || a.name.endsWith(":writingMode")
+      );
+      return wmAttr ? /^tb/.test(wmAttr.value) : false;
+    };
+
+    // 두 자막을 같은 p에 br로 합쳐서 region 충돌 방지 (한 region에 stacked 표시)
+    for (const line1 of sub1) {
+      // pair with the most time-overlapping target line (shared with youtube.js
+      // via BaseVideo.findMostOverlappingLine — see it for the ranking rationale)
+      const line2 = this.findMostOverlappingLine(
+        line1.start,
+        line1.end,
+        sub2,
+        (l) => l.start,
+        (l) => l.end
+      );
+
+      if (line2) {
+        const v1 = isRegionVertical(sub1Meta.xmlDoc, line1.region);
+        const v2 = isRegionVertical(sub2Meta.xmlDoc, line2.region);
+        // sub1 세로 + sub2 가로 → sub2(가로) region/style을 base로 (TTML writingMode는 region 단위)
+        const useSwap = v1 && !v2;
+        mergedSub.push({
+          start: line1.start,
+          end: line1.end,
+          region: useSwap ? line2.region : line1.region,
+          style: useSwap ? line2.style : line1.style,
+          text: line1.text,
+          originalP: line1.originalP,
+          text2: line2.text,
+          style2: line2.style,
+          originalP2: line2.originalP,
+        });
+      } else {
+        mergedSub.push(line1);
+      }
+    }
+
+    mergedSubMeta.subtitles = mergedSub;
+    return mergedSubMeta;
+  }
+
+  static encodeMergedSubtitles(subMeta) {
+    var xmlDoc = subMeta.xmlDoc;
+    var subtitles = subMeta.subtitles;
+    const body = xmlDoc.getElementsByTagName("body")[0];
+    let div = body.getElementsByTagName("div")[0];
+    if (!div) {
+      div = xmlDoc.createElement("div");
+      body.appendChild(div);
+    }
+
+    // sourceP 자식들을 target에 복사 (같은 doc이면 cloneNode, 아니면 importNode)
+    const copyChildren = (sourceP, target) => {
+      Array.from(sourceP.childNodes).forEach((child) => {
+        const cloned =
+          child.ownerDocument === xmlDoc
+            ? child.cloneNode(true)
+            : xmlDoc.importNode(child, true);
+        target.appendChild(cloned);
+      });
+    };
+
+    subtitles.forEach((sub, idx) => {
+      const p = xmlDoc.createElement("p");
+      p.setAttribute("xml:id", `subtitle${idx + 1}`);
+      p.setAttribute("begin", `${sub.start}t`);
+      p.setAttribute("end", `${sub.end}t`);
+      if (sub.region) p.setAttribute("region", sub.region);
+      if (sub.style) p.setAttribute("style", sub.style);
+
+      // sub1 본문: originalP 자식 그대로 복사 (ruby/br/nested span 보존)
+      if (sub.originalP) {
+        copyChildren(sub.originalP, p);
+      } else {
+        const span = xmlDoc.createElement("span");
+        span.textContent = sub.text;
+        p.appendChild(span);
+      }
+
+      // dual-sub: br + span2(번역언어 wrapper)로 두번째 언어 추가
+      if (sub.originalP2 || sub.text2) {
+        p.appendChild(xmlDoc.createElement("br"));
+        const span2 = xmlDoc.createElement("span");
+        if (sub.style2) span2.setAttribute("style", sub.style2);
+        if (sub.originalP2) {
+          copyChildren(sub.originalP2, span2);
+        } else {
+          span2.textContent = sub.text2;
+        }
+        p.appendChild(span2);
+      }
+
+      div.appendChild(p);
+    });
+
+    const serializer = new XMLSerializer();
+    return serializer.serializeToString(xmlDoc);
+  }
+}

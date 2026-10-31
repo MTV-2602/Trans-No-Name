@@ -1,0 +1,73 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "__MSG_appName__",
+  "description": "__MSG_appDesc__",
+  "author": "MTV-2602",
+  "default_locale": "en",
+  "icons": {
+    "16": "icons/icon_16.png",
+    "32": "icons/icon_32.png",
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval' ;  object-src 'none'"
+  },
+  "permissions": ["storage", "tts", "tabs", "scripting", "contextMenus", "offscreen", "search", "fontSettings"],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+
+
+  "web_accessible_resources": [{
+    "resources": ["pdfjs/web/viewer.html", "ocr.html", "opencvHandler.html", "googleDocInject.js","subtitle.js", "popup.html"],
+    "matches": ["<all_urls>"]
+  }],
+  "sandbox": {
+    "pages": [
+      "opencvHandler.html"
+    ]
+  },
+  "commands": {
+    "copy-translated-text": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+6"
+      },
+      "description": "Copy Translated Text"
+    },
+    "copy-source-text": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+7"
+      },
+      "description": "Copy Source Text"
+    }
+  },
+  "omnibox": { "keyword" : "/" },
+
+
+
+
+  "content_scripts": [
+    {
+      "js": ["contentScript.js"],
+      "css": ["tippy.css"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "matches": ["<all_urls>"],
+      "match_about_blank": true
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Trans No Name",
+    "default_popup": "popup.html"
+  },
+  "options_ui": {
+    "open_in_tab": true,
+    "page": "popup.html"
+  }
+}
